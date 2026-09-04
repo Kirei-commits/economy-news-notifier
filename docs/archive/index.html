@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>経済日報 バックナンバー</title>
+<style>
+:root {
+  --ink: #16130f;
+  --ink-soft: #5a534a;
+  --rule: #c9c1b4;
+  --paper: #f7f4ec;
+  --accent: #8a1c1c;
+  --up: #b3261e;
+  --down: #1b5e9c;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #ece7dd;
+    --ink-soft: #a49c90;
+    --rule: #3e3830;
+    --paper: #14120f;
+    --accent: #d98b8b;
+    --up: #e2726a;
+    --down: #7fb2e0;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", "Times New Roman", serif;
+  line-height: 1.75;
+}
+.paper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 28px 20px 64px;
+}
+.masthead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 10px;
+  border-bottom: 3px double var(--rule);
+  flex-wrap: wrap;
+}
+.paper-name {
+  margin: 0;
+  font-size: clamp(30px, 7vw, 46px);
+  letter-spacing: 0.34em;
+  text-indent: 0.34em;
+  font-weight: 700;
+}
+.masthead-meta {
+  font-size: 13px;
+  color: var(--ink-soft);
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+.lead { padding: 22px 0 4px; border-bottom: 1px solid var(--rule); }
+.lead-headline {
+  margin: 0 0 12px;
+  border-left: 5px solid var(--accent);
+  padding-left: 14px;
+  font-size: clamp(23px, 4.6vw, 34px);
+  line-height: 1.45;
+  letter-spacing: 0.02em;
+}
+.lead-body {
+  margin: 0 0 16px;
+  font-size: 16.5px;
+  text-align: justify;
+}
+.top-items { list-style: none; margin: 0 0 20px; padding: 0; border-top: 1px solid var(--rule); }
+.top-items li { padding: 9px 0; border-bottom: 1px dotted var(--rule); }
+.top-items a { font-size: 16px; font-weight: 600; }
+.market { padding: 18px 0; border-bottom: 1px solid var(--rule); }
+.market table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.market th, .market td { padding: 5px 8px; border-bottom: 1px solid var(--rule); text-align: left; }
+.market thead th { font-size: 12px; color: var(--ink-soft); letter-spacing: 0.1em; font-weight: 500; }
+.market .num { text-align: right; font-variant-numeric: tabular-nums; }
+.market .up { color: var(--up); }
+.market .down { color: var(--down); }
+.market-note { margin: 8px 0 0; font-size: 12px; color: var(--ink-soft); }
+.sections { padding-top: 22px; }
+@media (min-width: 720px) {
+  .sections { column-count: 2; column-gap: 34px; column-rule: 1px solid var(--rule); }
+}
+.section { break-inside: avoid-column; margin: 0 0 26px; }
+.section-heading {
+  margin: 0 0 10px;
+  font-size: 14px;
+  letter-spacing: 0.22em;
+  font-weight: 700;
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--ink);
+}
+.articles, .archive-list { list-style: none; margin: 0; padding: 0; }
+.articles li { padding: 8px 0; border-bottom: 1px dotted var(--rule); }
+.archive-list li { padding: 10px 0; border-bottom: 1px dotted var(--rule); }
+.archive-date { display: inline-block; min-width: 11em; color: var(--ink-soft); font-size: 13px; }
+a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--rule); }
+a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+.source { display: block; font-size: 12px; color: var(--ink-soft); letter-spacing: 0.06em; }
+.colophon {
+  margin-top: 26px;
+  padding-top: 14px;
+  border-top: 3px double var(--rule);
+  font-size: 12.5px;
+  color: var(--ink-soft);
+}
+.colophon p { margin: 6px 0; }
+@media print {
+  body { background: #fff; color: #000; }
+  a { border-bottom: none; }
+}
+</style>
+</head>
+<body>
+<div class="paper">
+
+<header class="masthead">
+  <div class="masthead-meta">縮刷版</div>
+  <h1 class="paper-name">経済日報</h1>
+  <div class="masthead-meta">全1号</div>
+</header>
+
+<main class="sections">
+  <ul class="archive-list">
+  <li>
+    <span class="archive-date">2026年9月5日(土)</span>
+    <a href="2026-09-05.html">米雇用の予想上振れと日欧の政策動向、企業再編の動き</a>
+  </li>
+  </ul>
+</main>
+
+<footer class="colophon">
+  <p><a href="../">最新号</a></p>
+</footer>
+
+</div>
+</body>
+</html>
