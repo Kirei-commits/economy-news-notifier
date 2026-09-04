@@ -17,7 +17,6 @@ const USER_AGENT =
 export interface NewsItem {
   source: string;
   category: Category;
-  english: boolean;
   title: string;
   link: string;
   id: string;
@@ -40,7 +39,6 @@ export async function fetchSource(source: FeedSource): Promise<NewsItem[]> {
   return (feed.items ?? []).slice(0, MAX_ITEMS_PER_SOURCE).map((item) => ({
     source: source.name,
     category: source.category,
-    english: source.english ?? false,
     title: (item.title ?? "(no title)").trim(),
     link: item.link ?? "",
     id: item.guid ?? item.link ?? `${source.name}:${item.title}`,
