@@ -43,4 +43,14 @@ export const FEED_SOURCES: FeedSource[] = [
     category: "マーケット・企業",
     english: true,
   },
+
+  // --- 差し替え候補(検証用。通ったものだけ残す) ---
+  { name: "候補:財務省", url: "https://www.mof.go.jp/rss/mof_press_release.xml", category: "国内経済" },
+  { name: "候補:経産省", url: "https://www.meti.go.jp/ministry/rss/press.xml", category: "国内経済" },
+  { name: "候補:内閣府", url: "https://www.cao.go.jp/rss/whatsnew.xml", category: "国内経済" },
+  { name: "候補:統計局", url: "https://www.stat.go.jp/rss/index.xml", category: "国内経済" },
+  { name: "候補:ロイター日本", url: "https://jp.reuters.com/rssFeed/businessNews", category: "国内経済" },
+  { name: "候補:Nikkei Asia", url: "https://asia.nikkei.com/rss/feed/nar", category: "海外経済", english: true },
+  { name: "候補:WSJ Markets", url: "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain", category: "マーケット・企業", english: true },
+  { name: "候補:IMF Blog", url: "https://www.imf.org/en/Blogs/rss", category: "海外経済", english: true },
 ];
