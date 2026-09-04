@@ -6,20 +6,19 @@ import { fetchSource } from "./feeds.js";
  * 新しいソースを追加したときは必ずこれを通すこと (npm run check-sources)。
  */
 async function main() {
-  let failed = 0;
+  const results = await Promise.allSettled(FEED_SOURCES.map(fetchSource));
 
-  for (const source of FEED_SOURCES) {
-    try {
-      const items = await fetchSource(source);
-      if (items.length === 0) {
-        failed++;
-        console.log(`EMPTY  ${source.name} (${source.url})`);
-        continue;
-      }
-      console.log(`OK     ${source.name} — ${items.length}件 / 最新: ${items[0].title}`);
-    } catch (err) {
+  let failed = 0;
+  for (const [i, result] of results.entries()) {
+    const source = FEED_SOURCES[i];
+    if (result.status === "rejected") {
       failed++;
-      console.log(`FAIL   ${source.name} (${source.url}) — ${(err as Error).message}`);
+      console.log(`FAIL   ${source.name} (${source.url}) — ${result.reason}`);
+    } else if (result.value.length === 0) {
+      failed++;
+      console.log(`EMPTY  ${source.name} (${source.url})`);
+    } else {
+      console.log(`OK     ${source.name} — ${result.value.length}件 / 最新: ${result.value[0].title}`);
     }
   }
 
