@@ -22,7 +22,9 @@ export const FEED_SOURCES: FeedSource[] = [
   // 国内経済
   { name: "NHK 経済", url: "https://www.nhk.or.jp/rss/news/cat5.xml", category: "国内経済" },
   { name: "Yahoo!ニュース 経済", url: "https://news.yahoo.co.jp/rss/topics/business.xml", category: "国内経済" },
-  { name: "ロイター 日本語", url: "https://feeds.reuters.com/reuters/JPBusinessNews", category: "国内経済" },
+  { name: "ロイター 日本語", url: "https://jp.reuters.com/rssFeed/topNews", category: "国内経済" },
+  { name: "時事通信", url: "https://www.jiji.com/rss/rss2.xml", category: "国内経済" },
+  { name: "産経 経済", url: "https://www.sankei.com/economy/rss.xml", category: "国内経済" },
 
   // 海外経済
   { name: "Nikkei Asia", url: "https://asia.nikkei.com/rss/feed/nar", category: "海外経済" },
