@@ -37,7 +37,10 @@ async function main() {
     console.warn("[warn] GEMINI_API_KEY is not set; 要約・和訳なしで発行します。");
     digest = fallbackDigest(newItems);
   }
-  newItems.forEach((item, i) => (item.title = digest.titles[i]));
+  newItems.forEach((item, i) => {
+    item.title = digest.titles[i];
+    item.summary = digest.summaries[i];
+  });
 
   const date = todayInTokyo();
   const topItems = digest.top.map((i) => newItems[i]);
@@ -101,6 +104,7 @@ function formatDiscordMessage(
   lines.push("", "**主なニュース**");
   for (const item of highlights) {
     lines.push(`- [${item.title}](${item.link}) — ${item.source}`);
+    if (item.summary) lines.push(`  ${item.summary}`);
   }
 
   const paperUrl = resolvePaperUrl();

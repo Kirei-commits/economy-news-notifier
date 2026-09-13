@@ -14,6 +14,9 @@ const FETCH_TIMEOUT_MS = 15000;
 const USER_AGENT =
   "economy-news-notifier/1.0 (+https://github.com/Kirei-commits/economy-news-notifier)";
 
+/** 要約の材料としてAIに渡す本文抜粋の上限(全文配信のフィードでプロンプトが膨らむのを防ぐ) */
+const MAX_SNIPPET_CHARS = 300;
+
 export interface NewsItem {
   source: string;
   category: Category;
@@ -21,9 +24,22 @@ export interface NewsItem {
   link: string;
   id: string;
   isoDate?: string;
+  /** フィード本文の抜粋(要約の入力) */
+  snippet?: string;
+  /** AIが生成した日本語要約(紙面に載せる) */
+  summary?: string;
 }
 
 const parser = new Parser();
+
+function extractSnippet(item: { contentSnippet?: string; content?: string }): string | undefined {
+  const text = (item.contentSnippet ?? item.content ?? "")
+    .replace(/<[^>]*>/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+  if (!text) return undefined;
+  return text.length > MAX_SNIPPET_CHARS ? `${text.slice(0, MAX_SNIPPET_CHARS)}…` : text;
+}
 
 export async function fetchSource(source: FeedSource): Promise<NewsItem[]> {
   const res = await fetch(source.url, {
@@ -43,6 +59,7 @@ export async function fetchSource(source: FeedSource): Promise<NewsItem[]> {
     link: item.link ?? "",
     id: item.guid ?? item.link ?? `${source.name}:${item.title}`,
     isoDate: item.isoDate,
+    snippet: extractSnippet(item),
   }));
 }
 

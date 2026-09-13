@@ -8,7 +8,7 @@
 - `src/sources.ts` — RSSフィード一覧(分野カテゴリ付き)
 - `src/feeds.ts` — フィード取得(失敗したソースは警告して読み飛ばす)
 - `src/market.ts` — Stooqから市況を取得(APIキー不要、取れない銘柄は落とす)
-- `src/digest.ts` — Geminiで一面見出し・リード文・重要記事の選定・英語見出しの和訳
+- `src/digest.ts` — Geminiで一面見出し・リード文・重要記事の選定・見出しと要約の和訳生成
 - `src/paper.ts` — 新聞レイアウトのHTML生成(明朝・段組み・市況表)
 - `src/index.ts` — メイン処理: 収集 → 既読除外 → 市況 → 要約 → 紙面出力 → Discord投稿
 - `src/seenStore.ts` — 既読記事IDの永続化 (`data/seen.json`)

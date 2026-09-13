@@ -99,15 +99,18 @@ ${rows || "  <li>まだ発行された号はありません。</li>"}
 
 function renderTopItems(items: NewsItem[]): string {
   if (items.length === 0) return "";
-  const lis = items
-    .map(
-      (item) => `    <li><a href="${escapeHtml(item.link)}">${escapeHtml(item.title)}</a>
-      <span class="source">${escapeHtml(item.source)}</span></li>`
-    )
-    .join("\n");
+  const lis = items.map((item) => `    <li>${renderArticle(item)}</li>`).join("\n");
   return `  <ul class="top-items">
 ${lis}
   </ul>`;
+}
+
+function renderArticle(item: NewsItem): string {
+  const summary = item.summary
+    ? `\n      <p class="summary">${escapeHtml(item.summary)}</p>`
+    : "";
+  return `<a href="${escapeHtml(item.link)}">${escapeHtml(item.title)}</a>${summary}
+      <span class="source">${escapeHtml(item.source)}</span>`;
 }
 
 function renderMarket(quotes: Quote[]): string {
@@ -138,12 +141,7 @@ ${rows}
 }
 
 function renderSection(category: Category, items: NewsItem[]): string {
-  const lis = items
-    .map(
-      (item) => `    <li><a href="${escapeHtml(item.link)}">${escapeHtml(item.title)}</a>
-      <span class="source">${escapeHtml(item.source)}</span></li>`
-    )
-    .join("\n");
+  const lis = items.map((item) => `    <li>${renderArticle(item)}</li>`).join("\n");
 
   return `<section class="section">
   <h2 class="section-heading">${escapeHtml(category)}</h2>
@@ -272,6 +270,8 @@ body {
 .archive-date { display: inline-block; min-width: 11em; color: var(--ink-soft); font-size: 13px; }
 a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--rule); }
 a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+.summary { margin: 5px 0 3px; font-size: 13.5px; line-height: 1.7; color: var(--ink-soft); text-align: justify; }
+.top-items .summary { font-size: 14.5px; color: var(--ink); }
 .source { display: block; font-size: 12px; color: var(--ink-soft); letter-spacing: 0.06em; }
 .colophon {
   margin-top: 26px;

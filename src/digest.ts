@@ -13,6 +13,8 @@ export interface Digest {
   top: number[];
   /** items と同順・同数の日本語見出し */
   titles: string[];
+  /** items と同順・同数の日本語要約(材料がない記事は空文字) */
+  summaries: string[];
 }
 
 export function fallbackDigest(items: NewsItem[]): Digest {
@@ -21,6 +23,7 @@ export function fallbackDigest(items: NewsItem[]): Digest {
     lead: "",
     top: [],
     titles: items.map((item) => item.title),
+    summaries: items.map(() => ""),
   };
 }
 
@@ -36,12 +39,13 @@ export async function buildDigest(
     source: item.source,
     category: item.category,
     title: item.title,
+    snippet: item.snippet,
   }));
   const market = quotes.map((q) => `${q.name} ${formatQuote(q)} (${formatChange(q)})`).join(" / ");
 
   const prompt = [
-    "あなたは経済新聞の編集長です。以下は本日集まった経済ニュースの見出し一覧です。",
-    "これをもとに、日刊紙の一面を組んでください。",
+    "あなたは経済新聞の編集長です。以下は本日集まった経済ニュースの見出しと本文抜粋です。",
+    "これをもとに、日刊紙の紙面を組んでください。",
     "",
     "指示:",
     "1. headline: 本日の経済を一言で表す主見出し。25字以内、体言止め。誇張や煽りは避ける。",
@@ -50,10 +54,14 @@ export async function buildDigest(
     "3. top: 特に重要な記事のインデックスを重要度順に3〜5件。",
     "4. titles: 入力と同じ順序・同じ件数で、各記事の日本語見出し。英語の見出しは自然な日本語に訳し、",
     "   日本語の見出しはそのまま(冗長な場合のみ簡潔に整える)。固有名詞・企業名・指標名は無理に和訳しない。",
+    "5. summaries: 入力と同じ順序・同じ件数で、各記事の日本語要約。60〜100字程度の1〜2文で、",
+    "   何がどうなったのかという要点を書く。英語の記事も必ず日本語で要約する。",
+    "   snippet がある記事はその内容だけを根拠にする。snippet がない記事は見出しから確実に読み取れる範囲に留め、",
+    "   数値・時期・因果関係を推測で補わない。要約する材料がなければ空文字にする。",
     "",
     market ? `本日の市況: ${market}` : "本日の市況データは取得できていません。",
     "",
-    "記事一覧(JSON):",
+    "記事一覧(JSON。snippet は配信元の本文抜粋で、無い記事もある):",
     JSON.stringify(list),
   ].join("\n");
 
@@ -72,8 +80,9 @@ export async function buildDigest(
             lead: { type: "STRING" },
             top: { type: "ARRAY", items: { type: "INTEGER" } },
             titles: { type: "ARRAY", items: { type: "STRING" } },
+            summaries: { type: "ARRAY", items: { type: "STRING" } },
           },
-          required: ["headline", "lead", "top", "titles"],
+          required: ["headline", "lead", "top", "titles", "summaries"],
         },
       },
     }),
@@ -97,6 +106,7 @@ export async function buildDigest(
         lead: parsed.lead?.trim() ?? "",
         top: (parsed.top ?? []).filter((i) => Number.isInteger(i) && i >= 0 && i < items.length).slice(0, 5),
         titles: parsed.titles.map((t, i) => t?.trim() || items[i].title),
+        summaries: items.map((_, i) => parsed.summaries?.[i]?.trim() ?? ""),
       };
     }
   } catch {
