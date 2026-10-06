@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>経済日報 2026年10月6日(火)</title>
+<style>
+:root {
+  --ink: #16130f;
+  --ink-soft: #5a534a;
+  --rule: #c9c1b4;
+  --paper: #f7f4ec;
+  --accent: #8a1c1c;
+  --up: #b3261e;
+  --down: #1b5e9c;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #ece7dd;
+    --ink-soft: #a49c90;
+    --rule: #3e3830;
+    --paper: #14120f;
+    --accent: #d98b8b;
+    --up: #e2726a;
+    --down: #7fb2e0;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", "Times New Roman", serif;
+  line-height: 1.75;
+}
+.paper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 28px 20px 64px;
+}
+.masthead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 10px;
+  border-bottom: 3px double var(--rule);
+  flex-wrap: wrap;
+}
+.paper-name {
+  margin: 0;
+  font-size: clamp(30px, 7vw, 46px);
+  letter-spacing: 0.34em;
+  text-indent: 0.34em;
+  font-weight: 700;
+}
+.masthead-meta {
+  font-size: 13px;
+  color: var(--ink-soft);
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+.lead { padding: 22px 0 4px; border-bottom: 1px solid var(--rule); }
+.lead-headline {
+  margin: 0 0 12px;
+  border-left: 5px solid var(--accent);
+  padding-left: 14px;
+  font-size: clamp(23px, 4.6vw, 34px);
+  line-height: 1.45;
+  letter-spacing: 0.02em;
+}
+.lead-body {
+  margin: 0 0 16px;
+  font-size: 16.5px;
+  text-align: justify;
+}
+.top-items { list-style: none; margin: 0 0 20px; padding: 0; border-top: 1px solid var(--rule); }
+.top-items li { padding: 9px 0; border-bottom: 1px dotted var(--rule); }
+.top-items a { font-size: 16px; font-weight: 600; }
+.market { padding: 18px 0; border-bottom: 1px solid var(--rule); }
+.market table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.market th, .market td { padding: 5px 8px; border-bottom: 1px solid var(--rule); text-align: left; }
+.market thead th { font-size: 12px; color: var(--ink-soft); letter-spacing: 0.1em; font-weight: 500; }
+.market .num { text-align: right; font-variant-numeric: tabular-nums; }
+.market .up { color: var(--up); }
+.market .down { color: var(--down); }
+.market-note { margin: 8px 0 0; font-size: 12px; color: var(--ink-soft); }
+.sections { padding-top: 22px; }
+@media (min-width: 720px) {
+  .sections { column-count: 2; column-gap: 34px; column-rule: 1px solid var(--rule); }
+}
+.section { break-inside: avoid-column; margin: 0 0 26px; }
+.section-heading {
+  margin: 0 0 10px;
+  font-size: 14px;
+  letter-spacing: 0.22em;
+  font-weight: 700;
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--ink);
+}
+.articles, .archive-list { list-style: none; margin: 0; padding: 0; }
+.articles li { padding: 8px 0; border-bottom: 1px dotted var(--rule); }
+.archive-list li { padding: 10px 0; border-bottom: 1px dotted var(--rule); }
+.archive-date { display: inline-block; min-width: 11em; color: var(--ink-soft); font-size: 13px; }
+a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--rule); }
+a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+.summary { margin: 5px 0 3px; font-size: 13.5px; line-height: 1.7; color: var(--ink-soft); text-align: justify; }
+.top-items .summary { font-size: 14.5px; color: var(--ink); }
+.source { display: block; font-size: 12px; color: var(--ink-soft); letter-spacing: 0.06em; }
+.colophon {
+  margin-top: 26px;
+  padding-top: 14px;
+  border-top: 3px double var(--rule);
+  font-size: 12.5px;
+  color: var(--ink-soft);
+}
+.colophon p { margin: 6px 0; }
+@media print {
+  body { background: #fff; color: #000; }
+  a { border-bottom: none; }
+}
+</style>
+</head>
+<body>
+<div class="paper">
+
+<header class="masthead">
+  <div class="masthead-meta">2026年10月6日(火)</div>
+  <h1 class="paper-name">経済日報</h1>
+  <div class="masthead-meta">52本 ／ 朝刊</div>
+</header>
+
+<article class="lead">
+  <h2 class="lead-headline">米株高値更新と臨時国会召集</h2>
+  <p class="lead-body">第2次高市改造内閣のもとで食料品の消費税減税などを論点とする臨時国会が召集された。外交・経済面では日豪財務相会談によりエネルギーや重要鉱物の安定供給に向けた新たな対話枠組みの立ち上げが決定した。海外ではトランプ米大統領が新AIタスクフォースの設置を発表したほか、米軍によるAIツールの利用停止など規制と活用を巡る動きが活発化した。金融政策面ではFRBやECB関連の動向が報じられた。株式市場では米長期金利が上昇するなかでもハイテク株買戻しによりナスダック指数が最高値を更新し、東京為替市場の円相場は終始小幅な値動きにとどまった。</p>
+    <ul class="top-items">
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261005de54878">焦点は食料品の消費税減税、臨時国会が召集</a>
+      <p class="summary">第2次高市改造内閣にとって初の論戦となる臨時国会が召集された。食料品の消費税減税法案が最大の焦点となるほか、道路予算カット発言が問題視された簗農林水産大臣の発言も注目される。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261006de54963">米ナスダックが最高値更新、長期金利上昇下でもハイテク銘柄に買い</a>
+      <p class="summary">5日のニューヨーク株式市場で大手IT銘柄などに買い注文が入り、長期金利の上昇が見られるなかでもハイテク株比率が高いナスダック株価指数が上昇して最高値を更新した。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261005de54890">日豪財務相が会談、新たな対話枠組みの立ち上げで合意</a>
+      <p class="summary">片山財務大臣はオーストラリアのチャルマーズ財務相と会談し、エネルギーや重要鉱物の確保に向けた新たな対話の枠組みを立ち上げる覚書を締結した。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/c5j9x9pr0240o?at_medium=RSS&amp;at_campaign=rss">米国防総省、アンスロピックのAIツール利用を停止</a>
+      <p class="summary">米国防総省はアンスロピック社がツールから安全保護枠の削除を拒否したため、2月に同社を供給網リスクと指定し利用を停止した。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.cnbc.com/2026/10/05/aging-population-moodys-public-finances.html">2029年の転換点、西側諸国の人口減少開始で公的財政に圧力</a>
+      <p class="summary">ムーディーズは高齢化が進む西側諸国で2029年から人口減少が始まり、公的財政への圧迫や世界経済への深刻な影響が生じると予測した。</p>
+      <span class="source">CNBC Economy</span></li>
+  </ul>
+</article>
+
+
+
+<main class="sections">
+<section class="section">
+  <h2 class="section-heading">金融政策</h2>
+  <ul class="articles">
+    <li><a href="http://www.boj.or.jp/research/research_data/gap/index.htm">日本銀行による需給ギャップ・潜在成長率および労働需給関連指標の発表</a>
+      <p class="summary">日本銀行は、経済情勢を分析するための指標として、需給ギャップや潜在成長率、労働需給関連指標に関するデータを公表した。</p>
+      <span class="source">日本銀行</span></li>
+    <li><a href="https://www.federalreserve.gov/newsevents/pressreleases/orders20261005a.htm">FRB、イザベラ・バンク・コーポレーションによる申請を承認</a>
+      <p class="summary">米連邦準備制度理事会（FRB）は、イザベラ・バンク・コーポレーションから提出されていた申請を承認したことを発表した。</p>
+      <span class="source">FRB</span></li>
+    <li><a href="https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261005~1d8d998ef4.en.html">ECBフィリップ・R・レイン氏、ECB金融政策における診断上の課題を語る</a>
+      <p class="summary">欧州中央銀行（ECB）のフィリップ・R・レイン氏が、ECBの金融政策運営における診断上の課題について言及した。</p>
+      <span class="source">ECB</span></li>
+  </ul>
+</section>
+<section class="section">
+  <h2 class="section-heading">国内経済</h2>
+  <ul class="articles">
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261006de55007">GMOグループ会社に不正アクセス、会員の個人情報94万件余が流出か</a>
+      <p class="summary">GMOインターネットグループ傘下のGMOリサーチ＆AIが運営するアンケートサイトに不正アクセスがあり、会員の氏名など個人情報94万件余りが流出したと発表された。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261006de54963">米ナスダックが最高値更新、長期金利上昇下でもハイテク銘柄に買い</a>
+      <p class="summary">5日のニューヨーク株式市場で大手IT銘柄などに買い注文が入り、長期金利の上昇が見られるなかでもハイテク株比率が高いナスダック株価指数が上昇して最高値を更新した。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261005de54878">焦点は食料品の消費税減税、臨時国会が召集</a>
+      <p class="summary">第2次高市改造内閣にとって初の論戦となる臨時国会が召集された。食料品の消費税減税法案が最大の焦点となるほか、道路予算カット発言が問題視された簗農林水産大臣の発言も注目される。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261005de54890">日豪財務相が会談、新たな対話枠組みの立ち上げで合意</a>
+      <p class="summary">片山財務大臣はオーストラリアのチャルマーズ財務相と会談し、エネルギーや重要鉱物の確保に向けた新たな対話の枠組みを立ち上げる覚書を締結した。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261005de54885">日豪経済会議が開幕、重要鉱物の安定供給などを議論</a>
+      <p class="summary">日本とオーストラリアの経済関係者が千葉市で会議を開き、中国が圧倒的シェアを占める重要鉱物の安定供給や確保に向けて両国の連携のあり方を議論した。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261005de54848">大起水産に不正アクセス、約17万5000人分の個人情報漏えいか</a>
+      <p class="summary">関西のすしチェーンである大起水産は外部からの不正アクセスを受け、公式アプリに登録されている約17万5000人分の個人情報が漏えいした可能性があると発表した。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261005de54797">円相場は小幅な値動き、5日の東京外国為替市場</a>
+      <p class="summary">5日の東京外国為替市場における円相場は、ドルに対して方向感を欠く展開となり、終始小幅な値動きにとどまった。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261005de54783">船舶使用停止命令を受けた東海汽船、山崎社長が辞任し顧問へ</a>
+      <p class="summary">飲酒乗務などの違反により国から一部の船舶使用停止命令を受けた東海汽船は、山崎社長が今月末で辞任し、その後に顧問へ就任する人事を発表した。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6597654?source=rss">東海汽船の山崎社長が引責辞任へ</a>
+      <p class="summary">東海汽船の山崎社長が、一連の違反行為や使用停止命令を受けた経営責任をとるため、社長を辞任することが分かった。</p>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6597666?source=rss">フジパン熊本工場が生産再開を断念</a>
+      <p class="summary">フジパンが、稼働を停止していた熊本工場について、今後の生産再開を断念することを決定したことが分かった。</p>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6597600?source=rss">上半期の人手不足倒産が過去最多を記録</a>
+      <p class="summary">深刻な労働力不足を背景とした人手不足による企業倒産件数が、上半期として過去最多を記録したことが判明した。</p>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6597701?source=rss">セブン＆アイ、インドの全31店舗を閉店</a>
+      <p class="summary">セブン＆アイ・ホールディングスが、インド国内で展開していた全31店舗を閉店し事業を終了したことが分かった。</p>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6597628?source=rss">日本ハム、「シャウエッセン」の実質値上げを発表</a>
+      <p class="summary">日本ハムが、主力商品であるソーセージ「シャウエッセン」について、内容量を減らす実質的な値上げを発表した。</p>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6597648?source=rss">倒産や廃業によるガソリンスタンド急速減少の背景</a>
+      <p class="summary">経営者の高齢化や倒産・廃業の増加に伴い、各地でガソリンスタンドが急速に減少している背景について整理した。</p>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6597637?source=rss">薬剤師がカスタマーハラスメントに苦慮する背景</a>
+      <p class="summary">調剤薬局などの現場において、薬剤師が患者からの過剰な要求やカスタマーハラスメントに苦慮している背景を探る。</p>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6597646?source=rss">稼ぎより家族を優先し時短勤務を選んだ父親の不安</a>
+      <p class="summary">収入よりも家族との時間を優先して時短勤務を選択した父親が、今後のキャリアや経済面で抱える不安について記す。</p>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+  </ul>
+</section>
+<section class="section">
+  <h2 class="section-heading">海外経済</h2>
+  <ul class="articles">
+    <li><a href="https://asia.nikkei.com/politics/international-relations/south-korea-cautious-over-deal-trump-says-keeps-getting-better">韓国、トランプ氏発言の貿易協定に慎重姿勢</a>
+      <p class="summary">韓国政府は、トランプ米元大統領が自画自賛する二国間協定の合意内容に対し、慎重な姿勢を示している。</p>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://asia.nikkei.com/spotlight/podcasts/podcast-tech-latest/is-it-possible-to-slow-down-ai-development">AI開発の減速は可能なのか</a>
+      <p class="summary">急速に進展する人工知能（AI）の技術開発スピードを、規制などを通じて減速させることが現実的に可能なのかを検証する。</p>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://asia.nikkei.com/business/energy/vietnam-extends-fuel-tax-breaks-as-energy-supply-disruptions-drag-on">ベトナム、エネルギー供給混迷の長期化で燃料減税を延長</a>
+      <p class="summary">ベトナム政府は、エネルギー供給の混乱が長期化している問題に対応するため、燃料税の減税措置を延長することを決定した。</p>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://asia.nikkei.com/spotlight/my-personal-history/harriman-experience-stephen-schwarzman-6">ハリマン体験：スティーブン・シュワルツマン氏（6）</a>
+      <p class="summary">ハリマンでの体験談として、ブラックストーン最高経営責任者（CEO）のスティーブン・シュワルツマン氏を特集する。</p>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://asia.nikkei.com/business/markets/equities/late-filings-by-situational-awareness-expose-gap-in-japan-disclosure-rules">シチュエーション・アウェアネスの提出遅延が日本の情報開示ルールの課題を露呈</a>
+      <p class="summary">シチュエーション・アウェアネスによる書類提出の遅延が、日本の情報開示ルールにおける不備や課題を露呈させている。</p>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://asia.nikkei.com/business/markets/equities/kioxia-sell-date-looms-for-retail-investors-who-joined-boom-on-margin">信用取引を行った個人投資家にキオクシア株売却期日が迫る</a>
+      <p class="summary">株式の信用取引ブームに乗って投資を行った個人投資家に対して、保有するキオクシア株の売却期日が迫っている。</p>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://asia.nikkei.com/spotlight/asean-money/myanmar-property-market-booms-as-prices-soar-on-regime-policies-inflation">ミャンマー不動産市場が好況、政権政策とインフレで価格上昇</a>
+      <p class="summary">ミャンマーの不動産市場が好況に沸いており、現政権の経済政策や急速なインフレの影響によって物件価格が急騰している。</p>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://asia.nikkei.com/economy/demography/elderly-outnumber-children-in-nearly-all-japan-prefectures">日本のほぼ全ての都道府県で高齢者数が子どもを上回る</a>
+      <p class="summary">日本のほぼ全ての都道府県において、65歳以上の高齢者人口が15歳未満の子どもの数を上回っていることが分かった。</p>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/cme3r9eq2w0lo?at_medium=RSS&amp;at_campaign=rss">幼い子どもの年金に月100ポンドを積み立てる保護者が増加</a>
+      <p class="summary">子どもの将来に備えて退職金基金などの年金口座を開設し、毎月100ポンドの積み立てを行う親が増加している様子を伝えている。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/c8r4yxpry5e9o?at_medium=RSS&amp;at_campaign=rss">英国の平均5年固定住宅ローン金利が3年ぶりに6%へ上昇</a>
+      <p class="summary">住宅ローン貸し手の調達コスト上昇に伴い固定金利が上がり、英国の平均5年固定住宅ローン金利が3年ぶりに6%に達した。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/c5j9x9pr0240o?at_medium=RSS&amp;at_campaign=rss">米国防総省、アンスロピックのAIツール利用を停止</a>
+      <p class="summary">米国防総省はアンスロピック社がツールから安全保護枠の削除を拒否したため、2月に同社を供給網リスクと指定し利用を停止した。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/cwp9g5p1gy7yo?at_medium=RSS&amp;at_campaign=rss">インド経済成長下で株式市場が下落する5つの理由</a>
+      <p class="summary">世界で最も成長率が高い大国経済であるインドで、2026年に同国株式市場が最も低調なパフォーマンスを示している5つの要因を分析する。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/cvze4g06526ro?at_medium=RSS&amp;at_campaign=rss">BT、ブロードバンド大手トークトークの買収救済案に合意</a>
+      <p class="summary">英BTがブロードバンド事業者トークトークの買収救済案に合意した。当局の承認が必要だが、顧客へのサービス継続の確実性をもたらす。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/cqj6jenp26zyo?at_medium=RSS&amp;at_campaign=rss">トランプ米大統領、新AIタスクフォースのトップに国家情報長官を起用</a>
+      <p class="summary">トランプ米大統領はAIへの懸念が高まる中、新設するAIタスクフォースのトップに国家情報長官を起用することを発表した。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/cqj9kje82jm1o?at_medium=RSS&amp;at_campaign=rss">英の影の財務相、保守党予算ごとに少なくとも1つの減税を約束</a>
+      <p class="summary">英国の「影の財務相」は、バーミンガムで開催された保守党大会で、党の予算案発表ごとに少なくとも1つの減税を行う方針を表明した。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/cje3r35p0qeno?at_medium=RSS&amp;at_campaign=rss">採用面接で答える必要のない質問への対処法</a>
+      <p class="summary">採用面接で現在の給与額を尋ねられた場合の適切な対応方法について、専門家が回答しなくてもよい理由とともに解説している。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.cnbc.com/2026/10/05/aging-population-moodys-public-finances.html">2029年の転換点、西側諸国の人口減少開始で公的財政に圧力</a>
+      <p class="summary">ムーディーズは高齢化が進む西側諸国で2029年から人口減少が始まり、公的財政への圧迫や世界経済への深刻な影響が生じると予測した。</p>
+      <span class="source">CNBC Economy</span></li>
+  </ul>
+</section>
+<section class="section">
+  <h2 class="section-heading">マーケット・企業</h2>
+  <ul class="articles">
+    <li><a href="https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-10-05-2026?mod=rss_markets_main">米国株式市場ニュース（2026年10月5日）：10年債利回り上昇、ナスダック最高値</a>
+      <p class="summary">2026年10月5日の米株式市場では、米10年物国債利回りが上昇しドル高が進む中、ナスダック総合指数が最高値を更新した。</p>
+      <span class="source">WSJ Markets</span></li>
+    <li><a href="https://www.wsj.com/pro/bankruptcy/loreal-taps-advisers-to-explore-unloading-chemical-related-liabilities-8293cb96?mod=rss_markets_main">ロレアル、タルク訴訟対応で化学関連負債の売却を検討</a>
+      <p class="summary">仏ロレアルの米子会社は、タルクに関連する訴訟問題に対応するため、アドバイザー企業と協力して化学関連負債の売却方法を検討している。</p>
+      <span class="source">WSJ Markets</span></li>
+    <li><a href="https://www.wsj.com/finance/investing/stocks-keep-climbingand-so-do-bond-yields-c91d7d75?mod=rss_markets_main">債券利回りが上昇する中、米ナスダックが最高値を更新</a>
+      <p class="summary">米10年物国債利回りが24年ぶりの高水準をつける中、世界的な債券安とAI投資ブームが重なり、ナスダック指数は連日の最高値を更新した。</p>
+      <span class="source">WSJ Markets</span></li>
+    <li><a href="https://www.wsj.com/finance/investing/kkr-strikes-deal-to-buy-private-capital-fund-administrator-gen-ii-40b951a5?mod=rss_markets_main">KKR、プライベートキャピタル管理会社Gen IIの買収に合意</a>
+      <p class="summary">KKRはプライベートキャピタルファンドの管理会社Gen IIの買収に合意した。公開市場への依存を減らす動きから買収が加速している。</p>
+      <span class="source">WSJ Markets</span></li>
+    <li><a href="https://www.wsj.com/finance/stocks/stocks-up-yields-up-26f7463d?mod=rss_markets_main">株価と利回りが共に上昇、原油高や物流再編も進行</a>
+      <p class="summary">米株価と債券利回りが共に上昇する一方、ブレント原油価格が100ドルに接近し、物流業界では大規模型再編の動きが進んでいる。</p>
+      <span class="source">WSJ Markets</span></li>
+    <li><a href="https://www.wsj.com/pro/bankruptcy/electronic-arts-bondholders-allege-default-following-largest-lbo-f296ee6b?mod=rss_markets_main">エレクトロニック・アーツの社債権者、LBO後のデフォルトを主張</a>
+      <p class="summary">エレクトロニック・アーツ（EA）の非公開化に伴い、社債権者が14億ドルの債務デフォルトを主張しプレミアム支払いを巡り対立している。</p>
+      <span class="source">WSJ Markets</span></li>
+    <li><a href="https://www.wsj.com/finance/stocks/your-index-fund-went-up-was-it-luck-or-smarts-cb64c836?mod=rss_markets_main">インデックスファンドの値上がりは運か実力か</a>
+      <p class="summary">インデックスファンドの価格上昇が運によるものか運用手法によるものかを分析するとともに、ユーロ安の進行についても触れている。</p>
+      <span class="source">WSJ Markets</span></li>
+    <li><a href="https://www.wsj.com/finance/banking/bank-stocks-are-haunted-by-the-ghosts-of-2023-a2a64725?mod=rss_markets_main">2023年の破綻劇の記憶に苛まれる銀行株の行方</a>
+      <p class="summary">利上げ局面を迎える中、強固なバランスシートを保持する銀行群に対し、2023年に発生した金融不安の記憶が影を落としている。</p>
+      <span class="source">WSJ Markets</span></li>
+    <li><a href="https://www.marketwatch.com/story/people-in-the-u-s-need-to-wake-up-as-a-mortgage-loan-officer-i-rejected-wealthy-couples-due-to-overspending-were-all-heading-for-trouble-6a52e04e?mod=mw_rss_topstories">米国人は危機感を深めるべき、住宅ローン担当者が警鐘</a>
+      <p class="summary">米国の住宅ローン担当者が富裕層夫婦の過度な支出を理由に融資を拒否した事例から、2008年並みの金融危機への警戒を呼びかけている。</p>
+      <span class="source">MarketWatch</span></li>
+    <li><a href="https://www.marketwatch.com/story/the-pain-was-excruciating-a-friend-in-her-80s-fell-down-her-basement-stairs-could-it-have-been-avoided-ce105db6?mod=mw_rss_topstories">80代女性の階段転倒事故と胸膜炎の発症</a>
+      <p class="summary">地下室の階段で転倒した80代女性が胸膜炎を発症して呼吸困難に陥った事例を紹介し、高齢者の転倒事故防止の重要性を提示している。</p>
+      <span class="source">MarketWatch</span></li>
+    <li><a href="https://www.marketwatch.com/story/the-case-for-nvidias-stock-to-march-even-higher-after-clinching-its-first-record-high-in-months-2bb5a937?mod=mw_rss_topstories">エヌビディア株が最高値更新後もさらに上昇すると見込まれる理由</a>
+      <p class="summary">エヌビディア株が数ヶ月ぶりに最高値を更新したことに対し、アナリストは株価の割安感とAI分野での中心的役割からさらなる上昇を予想する。</p>
+      <span class="source">MarketWatch</span></li>
+    <li><a href="https://www.marketwatch.com/story/this-new-ai-model-could-help-america-close-a-technological-gap-with-china-c1d74492?mod=mw_rss_topstories">米中技術格差を埋める可能性を秘めた新たなAIモデル</a>
+      <p class="summary">エヌビディアが支援するリフレクションAIが超高効率なオープンモデル「Beam」を発表し、米中間の技術格差縮小への貢献が期待されている。</p>
+      <span class="source">MarketWatch</span></li>
+    <li><a href="https://www.marketwatch.com/story/microsofts-blazing-stock-comeback-isnt-even-close-to-being-over-analyst-says-265f7b6d?mod=mw_rss_topstories">マイクロソフト株の堅調な回復は継続するとアナリストが分析</a>
+      <p class="summary">メリウス・リサーチのアナリストは、安全なAI投資先を求める投資家の動きの中でマイクロソフト株の堅調な復活が継続すると分析した。</p>
+      <span class="source">MarketWatch</span></li>
+    <li><a href="https://www.marketwatch.com/story/western-digital-and-seagate-shares-bounce-back-as-analysts-downplay-the-toshiba-threat-4979dbff?mod=mw_rss_topstories">ウエスタンデジタルとシーゲイトの株価が回復、東芝の脅威は限定的</a>
+      <p class="summary">東芝の生産能力倍増計画に対し、アナリストが先行企業追撃には時間がかかると見なしたため、ウエスタンデジタルなどの株価が反発した。</p>
+      <span class="source">MarketWatch</span></li>
+    <li><a href="https://www.marketwatch.com/story/this-rare-stock-market-divide-means-an-elevated-chance-of-a-big-surge-or-a-deep-plunge-cf2cb4e5?mod=mw_rss_topstories">ナスダックとダウの異例な乖離が示す相場急変動の兆候</a>
+      <p class="summary">ナスダックとダウ平均株価の2ヶ月間のリターンに異例の大きな乖離が生じており、今後の市場の大幅上昇または急落の可能性が指摘されている。</p>
+      <span class="source">MarketWatch</span></li>
+    <li><a href="https://www.marketwatch.com/story/trump-is-promising-90-medicare-rebate-checks-ahead-of-the-midterms-heres-the-hidden-cost-14b7e2ce?mod=mw_rss_topstories">トランプ氏、中間選挙に向け90ドルのメディケア還元を公約</a>
+      <p class="summary">トランプ大統領が中間選挙を見据え高齢者向けに90ドルのメディケア還付を約したものの、医療費増加の隠れたコストが懸念されている。</p>
+      <span class="source">MarketWatch</span></li>
+  </ul>
+</section>
+</main>
+
+<footer class="colophon">
+  <p><a href="./">バックナンバー</a></p>
+  <p>RSSで収集した公開記事の見出しを機械的に整理し、要約はAIが生成しています。投資判断は一次情報をご確認ください。</p>
+</footer>
+
+</div>
+</body>
+</html>
