@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>経済日報 2026年10月7日(水)</title>
+<style>
+:root {
+  --ink: #16130f;
+  --ink-soft: #5a534a;
+  --rule: #c9c1b4;
+  --paper: #f7f4ec;
+  --accent: #8a1c1c;
+  --up: #b3261e;
+  --down: #1b5e9c;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #ece7dd;
+    --ink-soft: #a49c90;
+    --rule: #3e3830;
+    --paper: #14120f;
+    --accent: #d98b8b;
+    --up: #e2726a;
+    --down: #7fb2e0;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", "Times New Roman", serif;
+  line-height: 1.75;
+}
+.paper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 28px 20px 64px;
+}
+.masthead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 10px;
+  border-bottom: 3px double var(--rule);
+  flex-wrap: wrap;
+}
+.paper-name {
+  margin: 0;
+  font-size: clamp(30px, 7vw, 46px);
+  letter-spacing: 0.34em;
+  text-indent: 0.34em;
+  font-weight: 700;
+}
+.masthead-meta {
+  font-size: 13px;
+  color: var(--ink-soft);
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+.lead { padding: 22px 0 4px; border-bottom: 1px solid var(--rule); }
+.lead-headline {
+  margin: 0 0 12px;
+  border-left: 5px solid var(--accent);
+  padding-left: 14px;
+  font-size: clamp(23px, 4.6vw, 34px);
+  line-height: 1.45;
+  letter-spacing: 0.02em;
+}
+.lead-body {
+  margin: 0 0 16px;
+  font-size: 16.5px;
+  text-align: justify;
+}
+.top-items { list-style: none; margin: 0 0 20px; padding: 0; border-top: 1px solid var(--rule); }
+.top-items li { padding: 9px 0; border-bottom: 1px dotted var(--rule); }
+.top-items a { font-size: 16px; font-weight: 600; }
+.market { padding: 18px 0; border-bottom: 1px solid var(--rule); }
+.market table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.market th, .market td { padding: 5px 8px; border-bottom: 1px solid var(--rule); text-align: left; }
+.market thead th { font-size: 12px; color: var(--ink-soft); letter-spacing: 0.1em; font-weight: 500; }
+.market .num { text-align: right; font-variant-numeric: tabular-nums; }
+.market .up { color: var(--up); }
+.market .down { color: var(--down); }
+.market-note { margin: 8px 0 0; font-size: 12px; color: var(--ink-soft); }
+.sections { padding-top: 22px; }
+@media (min-width: 720px) {
+  .sections { column-count: 2; column-gap: 34px; column-rule: 1px solid var(--rule); }
+}
+.section { break-inside: avoid-column; margin: 0 0 26px; }
+.section-heading {
+  margin: 0 0 10px;
+  font-size: 14px;
+  letter-spacing: 0.22em;
+  font-weight: 700;
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--ink);
+}
+.articles, .archive-list { list-style: none; margin: 0; padding: 0; }
+.articles li { padding: 8px 0; border-bottom: 1px dotted var(--rule); }
+.archive-list li { padding: 10px 0; border-bottom: 1px dotted var(--rule); }
+.archive-date { display: inline-block; min-width: 11em; color: var(--ink-soft); font-size: 13px; }
+a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--rule); }
+a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+.summary { margin: 5px 0 3px; font-size: 13.5px; line-height: 1.7; color: var(--ink-soft); text-align: justify; }
+.top-items .summary { font-size: 14.5px; color: var(--ink); }
+.source { display: block; font-size: 12px; color: var(--ink-soft); letter-spacing: 0.06em; }
+.colophon {
+  margin-top: 26px;
+  padding-top: 14px;
+  border-top: 3px double var(--rule);
+  font-size: 12.5px;
+  color: var(--ink-soft);
+}
+.colophon p { margin: 6px 0; }
+@media print {
+  body { background: #fff; color: #000; }
+  a { border-bottom: none; }
+}
+</style>
+</head>
+<body>
+<div class="paper">
+
+<header class="masthead">
+  <div class="masthead-meta">2026年10月7日(水)</div>
+  <h1 class="paper-name">経済日報</h1>
+  <div class="masthead-meta">56本 ／ 朝刊</div>
+</header>
+
+<article class="lead">
+  <h2 class="lead-headline">米株高やAI関連拡大と緊急石油備蓄の協調検討</h2>
+  <p class="lead-body">金融政策では日銀の各種報告公表やECB高官の発言があった。国内経済では日立とファナックによるフィジカルAIでの提携や、日本と東南アジアなどによる緊急時石油備蓄放出の枠組み検討が判明した。一方で企業での不正アクセスや個人情報漏えいのリスクが相次ぐ。海外では米国の貿易赤字拡大や世界銀行による成長予測の上方修正が示された。市況では、AI需要への期待から米国市場でS＆P500が最高値を更新し、東京株式市場でも日経平均株価の終値が約3か月ぶりに7万円台を回復するなど、ハイテク銘柄を中心に買いが先行した。</p>
+    <ul class="top-items">
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261007de55633">ニューヨーク株式市場でS＆P500が最高値更新 AI関連銘柄に買い</a>
+      <p class="summary">6日のニューヨーク株式市場でAI需要拡大の期待から半導体などの関連銘柄に買いが入り、ナスダックとS＆P500が最高値を更新した。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261006de55526">株価 値上がり 終値約3か月ぶりに7万円台回復</a>
+      <p class="summary">6日の東京株式市場でAI・半導体関連を中心に買い注文が集まり、日経平均株価の終値がおよそ3か月ぶりに7万円台を回復した。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261006de55581">フィジカルAI 日立とファナックなど大手連携の開発相次ぐ</a>
+      <p class="summary">日立製作所とファナックはロボット等を動かすフィジカルAI分野で提携し、生産性向上に向け来年度の実用化を目指す。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261006de55579">日本・東南アジアなど 緊急時に石油備蓄放出する枠組み検討へ</a>
+      <p class="summary">中東情勢を受け、日本や東南アジアなど11か国が石油備蓄を強化し緊急時に協調放出する枠組み検討で合意する見通しとなった。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://www.cnbc.com/2026/10/06/world-bank-east-asia-growth-inflation-ai-exports-.html">世界銀行、東アジア・太平洋の成長予測を4.5%に引き上げもAI集中リスクに警告</a>
+      <p class="summary">世界銀行は地域の成長率見通しを4.5%に上方修正したが、AI関連以外の貿易成長が低調であるリスクを指摘した。</p>
+      <span class="source">CNBC Economy</span></li>
+  </ul>
+</article>
+
+
+
+<main class="sections">
+<section class="section">
+  <h2 class="section-heading">金融政策</h2>
+  <ul class="articles">
+    <li><a href="http://www.boj.or.jp/statistics/boj/other/acmai/release/2026/ac260930.htm">営業毎旬報告（9月30日現在）</a>
+      <p class="summary">日本銀行が9月30日現在の営業毎旬報告を公表した。</p>
+      <span class="source">日本銀行</span></li>
+    <li><a href="http://www.boj.or.jp/statistics/boj/other/mbt/mbt2609.pdf">マネタリーベースと日本銀行の取引（9月）</a>
+      <p class="summary">日本銀行が9月のマネタリーベースおよび取引状況に関する報告を公表した。</p>
+      <span class="source">日本銀行</span></li>
+    <li><a href="http://www.boj.or.jp/statistics/boj/other/tseifu/release/2026/seifu2609.pdf">日本銀行の対政府取引（9月）</a>
+      <p class="summary">日本銀行が9月の対政府取引の実績について報告を公表した。</p>
+      <span class="source">日本銀行</span></li>
+    <li><a href="http://www.boj.or.jp/statistics/boj/fm/ope/m_release/2026/ope2609.xlsx">オペレーション（9月）</a>
+      <p class="summary">日本銀行が9月に実施したオペレーションに関する報告を公表した。</p>
+      <span class="source">日本銀行</span></li>
+    <li><a href="http://www.boj.or.jp/finsys/intlact_fs/kisei/kis261006a.htm">バーゼル銀行監督委員会による議事要旨の公表について</a>
+      <p class="summary">日本銀行がバーゼル銀行監督委員会による議事要旨の公表について案内した。</p>
+      <span class="source">日本銀行</span></li>
+    <li><a href="http://www.boj.or.jp/about/press/koen_2026/ko261006a.htm">【挨拶】植田総裁（全国証券大会）</a>
+      <p class="summary">日本銀行の植田総裁が全国証券大会において挨拶を行った。</p>
+      <span class="source">日本銀行</span></li>
+    <li><a href="https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261006_1~0df91e4e44.en.html">フランク・エルデルソン：タイムリーな是正による有効な監督</a>
+      <p class="summary">ECBのフランク・エルデルソン氏がタイムリーな是正を通じた有効な監督のあり方を議論した。</p>
+      <span class="source">ECB</span></li>
+    <li><a href="https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261006~0da978f159.en.html">ピエロ・チポローネ：デジタル時代のお金：デジタルユーロ、トークン化、中央銀行の役割</a>
+      <p class="summary">ECBのピエロ・チポローネ氏がデジタルユーロやトークン化、中央銀行の役割について語った。</p>
+      <span class="source">ECB</span></li>
+    <li><a href="https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261006~bc94400297.en.html">フィリップ・R・レーン：Ansaインタビュー</a>
+      <p class="summary">ECBのフィリップ・レーン氏がAnsaからのインタビューに回答した。</p>
+      <span class="source">ECB</span></li>
+  </ul>
+</section>
+<section class="section">
+  <h2 class="section-heading">国内経済</h2>
+  <ul class="articles">
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261007de55633">ニューヨーク株式市場でS＆P500が最高値更新 AI関連銘柄に買い</a>
+      <p class="summary">6日のニューヨーク株式市場でAI需要拡大の期待から半導体などの関連銘柄に買いが入り、ナスダックとS＆P500が最高値を更新した。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261006de55581">フィジカルAI 日立とファナックなど大手連携の開発相次ぐ</a>
+      <p class="summary">日立製作所とファナックはロボット等を動かすフィジカルAI分野で提携し、生産性向上に向け来年度の実用化を目指す。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261006de55579">日本・東南アジアなど 緊急時に石油備蓄放出する枠組み検討へ</a>
+      <p class="summary">中東情勢を受け、日本や東南アジアなど11か国が石油備蓄を強化し緊急時に協調放出する枠組み検討で合意する見通しとなった。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261007de55592">旭化成子会社 個人情報55万人余 漏えいの可能性と発表</a>
+      <p class="summary">旭化成セラピューティクスは、医療関係者向けサイトが不正アクセスを受け55万人余の個人情報が漏えいした可能性を発表した。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261006de55560">片山財務相 「選挙運動ということではない」 一部報道に</a>
+      <p class="summary">片山財務相は参院選前の公選法違反疑惑の報道に対し、出席したのは自民党東京都連女性局主催の集会であると釈明した。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261006de55543">相次ぐ不正アクセス 自分の情報をどう守る リスクと対策は</a>
+      <p class="summary">個人情報の流出やカーシェアでの本人確認情報の漏えいなど不正アクセスが相次いでおり、個人の情報保護対策が求められている。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261006de55532">企業への不正アクセス被害相次ぐ 個人情報の大規模流出も</a>
+      <p class="summary">企業への不正アクセスによりサプライチェーンへの影響や、大規模な個人情報流出につながる被害が相次いで発生している。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261006de55526">株価 値上がり 終値約3か月ぶりに7万円台回復</a>
+      <p class="summary">6日の東京株式市場でAI・半導体関連を中心に買い注文が集まり、日経平均株価の終値がおよそ3か月ぶりに7万円台を回復した。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6597758?source=rss">10年物国債 表面利率を年3.1%に</a>
+      <p class="summary">10年物国債の表面利率が年3.1%に設定された。</p>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6597835?source=rss">実質賃金10年ぶり8カ月連続プラス</a>
+      <p class="summary">実質賃金が10年ぶりに8カ月連続のプラスを記録した。</p>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6597802?source=rss">日販 米AI企業への書籍販売認める</a>
+      <p class="summary">日販が米国のAI企業に対する書籍の販売を認める方針を示した。</p>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6597805?source=rss">台風で高波 西湘バイパス通行止め</a>
+      <p class="summary">台風による高波の影響を受けて西湘バイパスが通行止めとなった。</p>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6597754?source=rss">アシックス 失速から売上1兆円へ</a>
+      <p class="summary">アシックスが業績の失速から回復し売上高1兆円を目指している。</p>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6597819?source=rss">視力落ち鉄道運転士失職 業界課題</a>
+      <p class="summary">視力の低下により鉄道運転士が失職する問題が業界全体の課題となっている。</p>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6597786?source=rss">レタス5割高 9月下旬の価格高騰</a>
+      <p class="summary">9月下旬にレタスの価格が高騰し5割高となった。</p>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6597764?source=rss">ゆうちょATM ファミマ順次終了へ</a>
+      <p class="summary">ファミリーマート店舗内に設置されているゆうちょ銀行のATMが順次終了する。</p>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+  </ul>
+</section>
+<section class="section">
+  <h2 class="section-heading">海外経済</h2>
+  <ul class="articles">
+    <li><a href="https://asia.nikkei.com/politics/international-relations/uk-universities-review-china-ties-after-mi5-espionage-alert">英国の大学、MI5のスパイ警戒を受け中国との関係を見直し</a>
+      <p class="summary">英国の大学がMI5によるスパイ警告を受け、中国との提携関係の見直しを進めている。</p>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://asia.nikkei.com/spotlight/my-personal-history/my-doorway-to-wall-street-stephen-schwarzman-7">ウォール街へのドア：スティーブン・シュワルツマン (7)</a>
+      <p class="summary">スティーブン・シュワルツマン氏がウォール街でのキャリアや経験について語る連載記事。</p>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://asia.nikkei.com/business/media-entertainment/bts-architect-steers-global-expansion-at-japan-record-label-avex">BTSの建築家がエイベックスのグローバル拡大を指揮</a>
+      <p class="summary">BTSの手掛け役が日本の大手レコード会社エイベックスの世界展開を指揮している。</p>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://asia.nikkei.com/business/business-asia/uncertainty-mounts-in-singapore-after-china-tightens-offshore-trust-rules">中国のオフショア信託規制強化でシンガポールに不透明感</a>
+      <p class="summary">中国がオフショア信託ルールの規制を強化したことで、シンガポール市場で不透明感が高まっている。</p>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://asia.nikkei.com/business/automobiles/honda-delays-next-gen-cr-v-hybrid-production-several-months-in-us-canada">ホンダ、米・カナダで次世代CR-Vハイブリッドの生産を数ヶ月延期</a>
+      <p class="summary">ホンダが米国およびカナダにおける次世代CR-Vハイブリッドの生産時期を数ヶ月遅らせた。</p>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://asia.nikkei.com/spotlight/environment/climate-change/tokyo-s-37-straight-days-of-rain-drive-up-fresh-vegetable-prices">東京の37日連続雨で生鮮野菜の価格が上昇</a>
+      <p class="summary">東京で37日連続の降雨が記録され、生鮮野菜の価格を押し上げる要因となっている。</p>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://asia.nikkei.com/opinion/can-india-turn-ai-disruption-into-job-growth">インドはAIによる変革を雇用の増加につなげられるか</a>
+      <p class="summary">インドがAIによる市場構造の変化を雇用の拡大に転換できるかが注目されている。</p>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://asia.nikkei.com/business/business-trends/tsmc-and-other-taiwan-players-boost-ai-spending-in-us-southeast-asia">TSMCなど台湾勢が米・東南アジアでAI投資を増額</a>
+      <p class="summary">TSMCをはじめとする台湾の半導体・IT企業が米国や東南アジアでAI支出を拡大している。</p>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/c6je50ydld31o?at_medium=RSS&amp;at_campaign=rss">酷評から実車へ 新型電気自動車ジャガーがお披露目</a>
+      <p class="summary">JLRが物議を醸したブランド再始動から2年を経て、新しい電気自動車のジャガーを公開した。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/c6zxjrekg29zo?at_medium=RSS&amp;at_campaign=rss">新油田未承認なら英国は「投資不可」のリスクとエクイノールが警告</a>
+      <p class="summary">エクイノールはローズバンク等の新規油田・ガス田が承認されない場合、英国への追加投資を見送る可能性を警告した。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/cxly57v78yv7o?at_medium=RSS&amp;at_campaign=rss">フローズンヨーグルトの復活、1個12ポンドで定着するか</a>
+      <p class="summary">2000年代にブームとなったフローズンヨーグルトが英国で復活したが、高価格帯で定着するか関心が集まる。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/cj3vqxldglepo?at_medium=RSS&amp;at_campaign=rss">「Braid」作者のジョナサン・ブロウ氏、最大級のパズルゲーム制作を語る</a>
+      <p class="summary">ジョナサン・ブロウ氏が約1,500のパズルを収録した新作ゲームを木曜日にリリースする。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/cj62ylzpr6d3o?at_medium=RSS&amp;at_campaign=rss">Asos、ハッカーによる不正通知送信を認める</a>
+      <p class="summary">ファッション通販のAsosは、アプリを通じて不正な通知がユーザーに送信されたことを確認した。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/ck1l3g8097rzo?at_medium=RSS&amp;at_campaign=rss">Asosハック通知後に身を守るための対応策</a>
+      <p class="summary">Asosは不正通知に反応しないよう注意を呼びかけ、今後の詳細情報共有を発表した。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/cqd09g77mygko?at_medium=RSS&amp;at_campaign=rss">Amazon、エミー賞の6年間の世界独占配信権を獲得</a>
+      <p class="summary">Amazonが伝統的な米国テレビ放送から移行し、エミー賞の6年間の世界ライブ配信権を取得した。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/cm62ep294qxlo?at_medium=RSS&amp;at_campaign=rss">ワーナー・ブラザースの取引が映画や配信価格に与える影響</a>
+      <p class="summary">ワーナー・ブラザースの取引が業界や利用者のストリーミング価格等に与える影響が議論されている。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.cnbc.com/2026/10/06/trade-deficit-hits-105point6-billion-widest-since-just-before-trump-tariffs-enacted-last-year.html">貿易赤字が1,056億ドルに拡大、昨年の関税導入直前以来の規模</a>
+      <p class="summary">米国の貿易赤字が7月から13.7%増加し1,056億ドルに達し、市場予想を上回る大幅拡大となった。</p>
+      <span class="source">CNBC Economy</span></li>
+    <li><a href="https://www.cnbc.com/2026/10/06/world-bank-east-asia-growth-inflation-ai-exports-.html">世界銀行、東アジア・太平洋の成長予測を4.5%に引き上げもAI集中リスクに警告</a>
+      <p class="summary">世界銀行は地域の成長率見通しを4.5%に上方修正したが、AI関連以外の貿易成長が低調であるリスクを指摘した。</p>
+      <span class="source">CNBC Economy</span></li>
+  </ul>
+</section>
+<section class="section">
+  <h2 class="section-heading">マーケット・企業</h2>
+  <ul class="articles">
+    <li><a href="https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-10-06-2026?mod=rss_markets_main">株式市場ニュース（2026年10月6日）：S&amp;P 500が最高値を更新</a>
+      <p class="summary">米10年物国債利回りの上昇が一服する中、S&amp;P500指数が過去最高値を更新した。</p>
+      <span class="source">WSJ Markets</span></li>
+    <li><a href="https://www.wsj.com/finance/stocks/the-s-p-500-hits-a-new-record-high-powered-by-techand-not-much-else-66e01705?mod=rss_markets_main">ハイテク株主導でS&amp;P 500が最高値更新</a>
+      <p class="summary">大半の銘柄が下落する中、AI関連をはじめとするハイテク銘柄の強い上昇力が市場を牽引している。</p>
+      <span class="source">WSJ Markets</span></li>
+    <li><a href="https://www.wsj.com/finance/investing/whatever-happens-to-bonds-stocks-win-d1c95f6f?mod=rss_markets_main">債券市場の動向にかかわらず株式が優位に</a>
+      <p class="summary">原油価格が上昇し半導体株が高低入り混じる中、株式市場全体が底堅い推移を見せている。</p>
+      <span class="source">WSJ Markets</span></li>
+    <li><a href="https://www.wsj.com/finance/wall-street-bonuses-are-expected-to-hit-another-high-this-year-d7dd453f?mod=rss_markets_main">ウォール街のボーナス、今年も過去最高水準の見通し</a>
+      <p class="summary">ニューヨーク州の報告によると、金融業界の利益が900億ドル規模に達しボーナス支給額が拡大する見通し。</p>
+      <span class="source">WSJ Markets</span></li>
+    <li><a href="https://www.wsj.com/finance/stocks/these-company-insiders-are-selling-should-you-6f9ce22a?mod=rss_markets_main">内部関係者の自社株売りと投資家の判断</a>
+      <p class="summary">企業のインサイダーによる自社株売りが相次ぐ中、個人の投資行動における注意点が議論されている。</p>
+      <span class="source">WSJ Markets</span></li>
+    <li><a href="https://www.wsj.com/finance/stocks/what-ouras-stalled-ipo-tells-us-about-one-hit-wonders-31921bf5?mod=rss_markets_main">OuraのIPO停滞が示す一発屋リスク</a>
+      <p class="summary">Ouraがプラットフォーム企業として提示したものの投資家の評価を得られずIPOが停滞している。</p>
+      <span class="source">WSJ Markets</span></li>
+    <li><a href="https://www.marketwatch.com/story/my-brother-in-law-convinced-his-parents-to-sign-over-their-home-and-savings-to-buy-a-3-million-compound-do-i-intervene-03fb96b7?mod=mw_rss_topstories">義理の兄が義両親を説得し300万ドルの物件を購入させた問題</a>
+      <p class="summary">家族内での資産譲渡や名義変更をめぐるトラブルと身内の介入について議論されている。</p>
+      <span class="source">MarketWatch</span></li>
+    <li><a href="https://www.marketwatch.com/story/the-s-p-500-is-back-in-record-territory-as-the-magnificent-seven-ride-to-the-rescue-e062724d?mod=mw_rss_topstories">マグニフィセント・セブンが助けとなりS&amp;P 500が最高値圏に復帰</a>
+      <p class="summary">「マグニフィセント・セブン」の復調により、金利上昇や原油高に脅かされていた強気相場が再活性化している。</p>
+      <span class="source">MarketWatch</span></li>
+    <li><a href="https://www.marketwatch.com/story/oct-9-has-loomed-large-in-stock-market-history-why-investors-still-shouldnt-buy-into-an-october-jinx-81d7149b?mod=mw_rss_topstories">10月9日が株式市場の歴史で重視される理由</a>
+      <p class="summary">過去に主要な転換点となった10月9日だが、ジンクスに惑わされずに投資判断を行うべきだと指摘されている。</p>
+      <span class="source">MarketWatch</span></li>
+    <li><a href="https://www.marketwatch.com/story/google-makes-a-fresh-bet-on-nuclear-power-as-the-ai-energy-crunch-intensifies-a757c296?mod=mw_rss_topstories">GoogleがAIエネルギー不足対応で原子力発電へ新たな投資</a>
+      <p class="summary">Googleが新たな原発一基分に相当する電力を確保する契約を結び、コンステレーション株が急騰した。</p>
+      <span class="source">MarketWatch</span></li>
+    <li><a href="https://www.marketwatch.com/story/marvell-just-impressed-wall-street-with-good-numbers-plus-a-better-story-57fbbf23?mod=mw_rss_topstories">Marvell、好業績と成長ストーリーでウォール街を魅了</a>
+      <p class="summary">Marvellは予測を上回る財務見通しと多様化した顧客基盤を示し、株価が急上昇した。</p>
+      <span class="source">MarketWatch</span></li>
+    <li><a href="https://www.marketwatch.com/story/worse-than-taking-away-your-parents-car-keys-taking-away-their-cellphone-how-to-protect-your-aging-parents-f01be6e6?mod=mw_rss_topstories">高齢の親のスマホを取り上げるべきか？保護の手法</a>
+      <p class="summary">高齢の親を各種リスクから守るため、スマホ管理やペアレンタルコントロール機能の活用が提案されている。</p>
+      <span class="source">MarketWatch</span></li>
+    <li><a href="https://www.marketwatch.com/story/trump-waives-rules-on-red-dyed-diesel-but-local-tax-and-other-concerns-remain-f6b448c8?mod=mw_rss_topstories">トランプ氏が赤色ディーゼルの規制緩和を実施</a>
+      <p class="summary">公道利用で農業用の赤色ディーゼル使用が2026年末まで免税で認可されたが、地域税などの課題が残る。</p>
+      <span class="source">MarketWatch</span></li>
+  </ul>
+</section>
+</main>
+
+<footer class="colophon">
+  <p><a href="./">バックナンバー</a></p>
+  <p>RSSで収集した公開記事の見出しを機械的に整理し、要約はAIが生成しています。投資判断は一次情報をご確認ください。</p>
+</footer>
+
+</div>
+</body>
+</html>
