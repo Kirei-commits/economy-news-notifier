@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>経済日報 2026年10月15日(木)</title>
+<style>
+:root {
+  --ink: #16130f;
+  --ink-soft: #5a534a;
+  --rule: #c9c1b4;
+  --paper: #f7f4ec;
+  --accent: #8a1c1c;
+  --up: #b3261e;
+  --down: #1b5e9c;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #ece7dd;
+    --ink-soft: #a49c90;
+    --rule: #3e3830;
+    --paper: #14120f;
+    --accent: #d98b8b;
+    --up: #e2726a;
+    --down: #7fb2e0;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", "Times New Roman", serif;
+  line-height: 1.75;
+}
+.paper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 28px 20px 64px;
+}
+.masthead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 10px;
+  border-bottom: 3px double var(--rule);
+  flex-wrap: wrap;
+}
+.paper-name {
+  margin: 0;
+  font-size: clamp(30px, 7vw, 46px);
+  letter-spacing: 0.34em;
+  text-indent: 0.34em;
+  font-weight: 700;
+}
+.masthead-meta {
+  font-size: 13px;
+  color: var(--ink-soft);
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+.lead { padding: 22px 0 4px; border-bottom: 1px solid var(--rule); }
+.lead-headline {
+  margin: 0 0 12px;
+  border-left: 5px solid var(--accent);
+  padding-left: 14px;
+  font-size: clamp(23px, 4.6vw, 34px);
+  line-height: 1.45;
+  letter-spacing: 0.02em;
+}
+.lead-body {
+  margin: 0 0 16px;
+  font-size: 16.5px;
+  text-align: justify;
+}
+.top-items { list-style: none; margin: 0 0 20px; padding: 0; border-top: 1px solid var(--rule); }
+.top-items li { padding: 9px 0; border-bottom: 1px dotted var(--rule); }
+.top-items a { font-size: 16px; font-weight: 600; }
+.market { padding: 18px 0; border-bottom: 1px solid var(--rule); }
+.market table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.market th, .market td { padding: 5px 8px; border-bottom: 1px solid var(--rule); text-align: left; }
+.market thead th { font-size: 12px; color: var(--ink-soft); letter-spacing: 0.1em; font-weight: 500; }
+.market .num { text-align: right; font-variant-numeric: tabular-nums; }
+.market .up { color: var(--up); }
+.market .down { color: var(--down); }
+.market-note { margin: 8px 0 0; font-size: 12px; color: var(--ink-soft); }
+.sections { padding-top: 22px; }
+@media (min-width: 720px) {
+  .sections { column-count: 2; column-gap: 34px; column-rule: 1px solid var(--rule); }
+}
+.section { break-inside: avoid-column; margin: 0 0 26px; }
+.section-heading {
+  margin: 0 0 10px;
+  font-size: 14px;
+  letter-spacing: 0.22em;
+  font-weight: 700;
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--ink);
+}
+.articles, .archive-list { list-style: none; margin: 0; padding: 0; }
+.articles li { padding: 8px 0; border-bottom: 1px dotted var(--rule); }
+.archive-list li { padding: 10px 0; border-bottom: 1px dotted var(--rule); }
+.archive-date { display: inline-block; min-width: 11em; color: var(--ink-soft); font-size: 13px; }
+a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--rule); }
+a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+.summary { margin: 5px 0 3px; font-size: 13.5px; line-height: 1.7; color: var(--ink-soft); text-align: justify; }
+.top-items .summary { font-size: 14.5px; color: var(--ink); }
+.source { display: block; font-size: 12px; color: var(--ink-soft); letter-spacing: 0.06em; }
+.colophon {
+  margin-top: 26px;
+  padding-top: 14px;
+  border-top: 3px double var(--rule);
+  font-size: 12.5px;
+  color: var(--ink-soft);
+}
+.colophon p { margin: 6px 0; }
+@media print {
+  body { background: #fff; color: #000; }
+  a { border-bottom: none; }
+}
+</style>
+</head>
+<body>
+<div class="paper">
+
+<header class="masthead">
+  <div class="masthead-meta">2026年10月15日(木)</div>
+  <h1 class="paper-name">経済日報</h1>
+  <div class="masthead-meta">54本 ／ 朝刊</div>
+</header>
+
+<article class="lead">
+  <h2 class="lead-headline">米インフレ加速で株安と円安、国内アパレル大手が統合へ</h2>
+  <p class="lead-body">米国の9月消費者物価指数が市場予想を上回ったことでインフレ懸念が強まり、ニューヨーク外為市場で一時1ドル＝158円台後半まで円安が進んだほか、株式市場は大幅下落となった。FRBの経済報告でも一部地区で物価の上昇ペース加速が示され、追加利上げが焦点となっている。国内ではアパレル大手のワールドとTSIホールディングスが持ち株会社設立による経営統合を発表し、サイゼリヤは10月末からの値上げを公表した。政局では簗農相が辞表を提出し高市首相が受理した。海外ではタイでG20財務相・中央銀行総裁会議が開幕するほか、ネットフリックスが約1000人の削減方針と報じられた。</p>
+    <ul class="top-items">
+    <li><a href="https://www.bbc.co.uk/news/articles/cwy8lx3pg4k2o?at_medium=RSS&amp;at_campaign=rss">米9月インフレ率が予想以上に上昇、ガソリン価格が押し上げ</a>
+      <p class="summary">米国の9月の消費者物価指数が前年同月比3.7％上昇し、市場予想を上回った。自動車用燃料価格の値上がりがインフレ率を押し上げた。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261015de59551">サイゼリヤ 原材料高騰などで10月29日から平均6％値上げ</a>
+      <p class="summary">外食チェーンのサイゼリヤは、原材料価格やエネルギーコストの上昇に伴い、10月29日から多くのメニューを平均6％値上げすると発表した。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261015de59528">ネットフリックスが人員約1000人削減方針か 米報道</a>
+      <p class="summary">米メディアは動画配信大手のネットフリックスが、事業成長の鈍化などを背景に世界で約1000人の人員削減を行う方針だと報じた。実現すれば2022年以来で最大規模の削減となる。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261014de59455">高市首相 簗農相の辞表受理 「任命責任 重く受け止めている」</a>
+      <p class="summary">高市総理大臣は簗農林水産大臣の辞表を受理し、任命責任を重く受け止めていると表明した。後任の大臣については15日に明らかにする考えを示した。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261015de59525">G20 財務相・中央銀行総裁会議 15日開幕へ</a>
+      <p class="summary">主要20か国の財務相・中央銀行総裁会議が15日にタイで開幕する。世界的なインフレ懸念や金利上昇傾向が進む中、経済の安定成長や金融分野のAI利活用などが議論される。</p>
+      <span class="source">NHK 経済</span></li>
+  </ul>
+</article>
+
+
+
+<main class="sections">
+<section class="section">
+  <h2 class="section-heading">金融政策</h2>
+  <ul class="articles">
+    <li><a href="http://www.boj.or.jp/intl_finance/cooperate/coop261014a.pdf">第15回日中韓・中央銀行総裁会合の開催について</a>
+      <span class="source">日本銀行</span></li>
+    <li><a href="http://www.boj.or.jp/statistics/boj/other/mei/release/2026/mei261009.xlsx">日本銀行が保有する国債の銘柄別残高</a>
+      <span class="source">日本銀行</span></li>
+    <li><a href="http://www.boj.or.jp/statistics/boj/other/acmai/release/2026/ac261010.htm">営業毎旬報告（10月10日現在）</a>
+      <span class="source">日本銀行</span></li>
+    <li><a href="https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261014~e4ca33588e.en.html">フランク・エルダーソン：不確実性に直面する中での強靭性の確保</a>
+      <span class="source">ECB</span></li>
+  </ul>
+</section>
+<section class="section">
+  <h2 class="section-heading">国内経済</h2>
+  <ul class="articles">
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261015de59528">ネットフリックスが人員約1000人削減方針か 米報道</a>
+      <p class="summary">米メディアは動画配信大手のネットフリックスが、事業成長の鈍化などを背景に世界で約1000人の人員削減を行う方針だと報じた。実現すれば2022年以来で最大規模の削減となる。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261015de59550">アパレル 「ワールド」と「TSI」が経営統合へ</a>
+      <p class="summary">アパレル大手のワールドとTSIホールディングスは、国内市場縮小を見据え、来年3月をめどに持ち株会社を設立して経営統合すると発表した。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261015de59551">サイゼリヤ 原材料高騰などで10月29日から平均6％値上げ</a>
+      <p class="summary">外食チェーンのサイゼリヤは、原材料価格やエネルギーコストの上昇に伴い、10月29日から多くのメニューを平均6％値上げすると発表した。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261015de59525">G20 財務相・中央銀行総裁会議 15日開幕へ</a>
+      <p class="summary">主要20か国の財務相・中央銀行総裁会議が15日にタイで開幕する。世界的なインフレ懸念や金利上昇傾向が進む中、経済の安定成長や金融分野のAI利活用などが議論される。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261015de59540">NY市場 円相場 一時1ドル＝158円台後半も 荒い値動きに</a>
+      <p class="summary">14日のNY外為市場で、発表された米9月消費者物価指数が予想を上回りドル買いが進行。円相場は一時1ドル＝158円台後半まで値下がりする荒い値動きとなった。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261015de59538">FRB経済報告“物価上昇ペース加速地区も” 追加利上げ時期焦点</a>
+      <p class="summary">米FRBが公表した経済報告では、経済の成長がみられる一方で物価上昇ペースが加速した地区もあった。インフレ再加速を抑えるための追加利上げの時期が焦点となる。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261015de59519">簗農相辞表提出で農業政策への影響避けられず</a>
+      <p class="summary">簗農林水産大臣が就任わずか1か月足らずで辞表を提出したことで、コメ価格乱高下や災害対応といった課題が山積する農業政策への影響が懸念されている。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261014de59455">高市首相 簗農相の辞表受理 「任命責任 重く受け止めている」</a>
+      <p class="summary">高市総理大臣は簗農林水産大臣の辞表を受理し、任命責任を重く受け止めていると表明した。後任の大臣については15日に明らかにする考えを示した。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6598738?source=rss">ワールドとTSI 経営統合で合意</a>
+      <p class="summary">アパレル大手のワールドとTSIホールディングスが経営統合することで合意した。</p>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6598757?source=rss">日銀利上げ 2%超える可能性は</a>
+      <p class="summary">日本銀行による利上げが2％を超える可能性について論じられている。</p>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6598805?source=rss">米上場の半導体株 下落止まらず</a>
+      <p class="summary">米国市場に上場する半導体関連株の下落傾向が続いている。</p>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6598797?source=rss">ネトフリ 従業員約1000人を削減へ</a>
+      <p class="summary">動画配信大手のネットフリックスが従業員約1000人を削減する方針である。</p>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6598795?source=rss">万博未払い アンゴラ異例対応の訳</a>
+      <p class="summary">大阪・関西万博の未払い問題においてアンゴラが異例の対応をとった背景について伝えている。</p>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6598728?source=rss">イオン系スーパー100店閉店 なぜ</a>
+      <p class="summary">イオン系のスーパーマーケットが100店舗閉店する背景や理由について取り上げている。</p>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6598751?source=rss">阪急電鉄 中吊広告を来年4月終了</a>
+      <p class="summary">阪急電鉄が電車内の中吊り広告掲載を来年4月に終了することを決めた。</p>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6598819?source=rss">うなぎパイ企業 部門赤字どう解消</a>
+      <p class="summary">うなぎパイを製造する企業が部門赤字を解消するための取り組みや課題について触れている。</p>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+  </ul>
+</section>
+<section class="section">
+  <h2 class="section-heading">海外経済</h2>
+  <ul class="articles">
+    <li><a href="https://asia.nikkei.com/business/aerospace-defense-industries/japanese-data-analytics-startup-solafune-to-launch-ai-satellite">日本のデータ分析スタートアップSolafune、AI衛星を打ち上げへ</a>
+      <p class="summary">日本のデータ分析スタートアップ企業SolafuneがAI搭載衛星の打ち上げを予定している。</p>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://asia.nikkei.com/business/energy/asean-power-grid-plan-in-spotlight-at-bangkok-imf-world-bank-meeting">バンコクのIMF・世界銀行会合でASEAN電力網構想に注目</a>
+      <p class="summary">バンコクで開催のIMF・世界銀行会合にて、ASEANの電力網構想が注目を集めている。</p>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://asia.nikkei.com/spotlight/my-personal-history/yasuo-stephen-schwarzman-14">やすお：スティーブン・シュワルツマン（14）</a>
+      <p class="summary">スティーブン・シュワルツマン氏に関する連載記事。</p>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://asia.nikkei.com/business/aerospace-defense-industries/japan-targets-30-rocket-launches-a-year-by-2030s">日本、2030年代までに年間30回のロケット打ち上げを目指す</a>
+      <p class="summary">日本政府が2030年代までに年間30回のロケット打ち上げ達成を目標としている。</p>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://asia.nikkei.com/business/automobiles/mazda-reshores-wire-harness-production-by-rethinking-it-for-robots">マツダ、ロボット活用でワイヤーハーネス生産を国内回帰</a>
+      <p class="summary">マツダがロボット技術を活用した自動化により、ワイヤーハーネスの生産を国内へ回帰させている。</p>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://asia.nikkei.com/opinion/southeast-asia-must-prepare-for-a-nuclear-future">東南アジアは原子力利用の未来に備えるべき</a>
+      <p class="summary">東南アジア地域において将来的な原子力利用への準備の必要性が指摘されている。</p>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://asia.nikkei.com/business/energy/taiwanese-korean-firms-eye-japan-grid-storage-market-with-china-locked-out">中国排除を受け、台湾・韓国企業が日本の系統用蓄電池市場に熱視線</a>
+      <p class="summary">中国企業の参入排除を背景に、台湾や韓国の企業が日本の系統用蓄電池市場に関心を寄せている。</p>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://asia.nikkei.com/business/travel-leisure/japan-disney-cruise-ship-to-float-a-new-travel-option-for-busy-families">日本発のディズニークルーズ船、多忙な家族に新たな旅行の選択肢を提供へ</a>
+      <p class="summary">日本で展開されるディズニークルーズ船が、多忙なファミリー層に向けた新しい旅行の選択肢となる。</p>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/cwp8gynk13rro?at_medium=RSS&amp;at_campaign=rss">英空港の見送り乗降料急増を受け政府が検証へ</a>
+      <p class="summary">英空港での見送り乗降料金の急増を受け、政府が検証を実施すると発表した。旅行のアクセス性確保と利用客への公平な対応を重視する構えである。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/c6zxj0gzk4x4o?at_medium=RSS&amp;at_campaign=rss">ネットフリックス、2022年以来最大規模となる1000人の人員削減へ</a>
+      <p class="summary">ネットフリックスが全世界で全従業員の約6％に当たる1000人の人員削減を行う。これは同社にとって2022年以来で最も急激な人員削減となる。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/c0rezqpnekro?at_medium=RSS&amp;at_campaign=rss">データセンターへの反発が米中間選挙に与える影響</a>
+      <p class="summary">米国各地でデータセンター開発に対する反対運動が高まり、民主・共和両党の候補者が反対を表明するなど、中間選挙に影響を与える動きが出ている。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/cm04054ykqqqo?at_medium=RSS&amp;at_campaign=rss">トイレットペーパーと隠し録音機：サウジ人OpenAIエンジニア逮捕の真相</a>
+      <p class="summary">オープンAIに1年以上勤務していたサウジアラビア人エンジニアがFBIに逮捕された。トイレットペーパーや隠し録音機などが捜査で取り沙汰されている。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/cx30eq0vyed4o?at_medium=RSS&amp;at_campaign=rss">英国経済への予期せぬ称賛が意味するもの</a>
+      <p class="summary">IMFの高官が過去24時間で3度にわたり英国の年間借り入れ削減計画を称賛した。これが次期予算案にどのような示唆を与えるかが注目されている。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/c5djvyde0y1jo?at_medium=RSS&amp;at_campaign=rss">中国製おもちゃが米国の小売店に届くまで</a>
+      <p class="summary">クリスマス商戦を控え、中国の工場で製造された子供向けのおもちゃが、米国の小売店の店頭に届くまでの流通経路について検証している。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/c94g1kvz006ko?at_medium=RSS&amp;at_campaign=rss">英国の運転実技試験の待ち時間が2年ぶり低水準も依然約5ヶ月待ち</a>
+      <p class="summary">英国の実技運転試験の待ち時間が2年ぶりの低水準となったものの、9月時点の平均待ち時間は約5か月間に当たる19.7週間と依然長い状態が続く。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/cwy8lx3pg4k2o?at_medium=RSS&amp;at_campaign=rss">米9月インフレ率が予想以上に上昇、ガソリン価格が押し上げ</a>
+      <p class="summary">米国の9月の消費者物価指数が前年同月比3.7％上昇し、市場予想を上回った。自動車用燃料価格の値上がりがインフレ率を押し上げた。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.cnbc.com/2026/10/14/high-inflation-fed-expectations.html">高インフレが米国で「日常」となった背景</a>
+      <p class="summary">米国で高インフレが長年にわたり高止まりしており、消費者が根強い物価高を当然と受け止めて定着してしまうことをFRBが警戒している。</p>
+      <span class="source">CNBC Economy</span></li>
+    <li><a href="https://www.cnbc.com/2026/10/14/cpi-inflation-report-september-2026.html">ガソリン高騰で米9月消費者物価指数が前年比3.7%上昇</a>
+      <p class="summary">米国の9月消費者物価指数がガソリン価格高騰により前年比3.7％上昇した。これは市場予想の3.6％上昇を上回る伸びとなった。</p>
+      <span class="source">CNBC Economy</span></li>
+    <li><a href="https://www.cnbc.com/2026/10/14/godzilla-el-nino-asia-inflation-philippines.html">エルニーニョ現象がフィリピン中銀のインフレ見通しを揺るがす</a>
+      <p class="summary">猛烈なエルニーニョ現象と原油ショックを受け、フィリピン中央銀行のインフレ見通しに影響が出ている。同国のインフレ率は3年ぶりの高水準となった。</p>
+      <span class="source">CNBC Economy</span></li>
+  </ul>
+</section>
+<section class="section">
+  <h2 class="section-heading">マーケット・企業</h2>
+  <ul class="articles">
+    <li><a href="https://www.wsj.com/livecoverage/stock-market-cpi-inflation-10-14-2026?mod=rss_markets_main">米インフレ報告を受け株安・国債利回り低下</a>
+      <p class="summary">米国のインフレ報告が予想を上回ったことでハイテク株を中心に株価が下落し、これに伴い米国債利回りも低下へと転じる動きとなった。</p>
+      <span class="source">WSJ Markets</span></li>
+    <li><a href="https://www.wsj.com/finance/stocks/ai-jitters-and-rate-hike-fears-combine-for-worst-day-for-stocks-since-july-6abd3a0f?mod=rss_markets_main">AIへの不安と利上げ警戒感が重なり米株市場が7月以来の大幅安</a>
+      <p class="summary">予想を上回る米インフレ率により10月の利上げ観測が強まり、さらにAI関連銘柄への信頼悪化も重なって株価は7月以来の大幅安を記録した。</p>
+      <span class="source">WSJ Markets</span></li>
+    <li><a href="https://www.wsj.com/finance/stocks/inflation-runs-hot-stocks-go-cold-eb83d91a?mod=rss_markets_main">インフレ加熱で株式市場は冷え込み、バンカメ決算は失速</a>
+      <p class="summary">米インフレ率の加速により株式市場が冷え込む一方、バンク・オブ・アメリカの決算は失望的な結果となり、投資銀行はAIブームの恩恵を受けた。</p>
+      <span class="source">WSJ Markets</span></li>
+    <li><a href="https://www.wsj.com/finance/banking/wall-street-worries-bank-of-americas-problems-will-linger-a564492f?mod=rss_markets_main">バンク・オブ・アメリカの問題長期化をウォール街が警戒</a>
+      <p class="summary">バンク・オブ・アメリカの弱含んだ決算と罰金を受け、アナリストらは同社の問題が今後も尾を引くのではないかと警戒感を強めている。</p>
+      <span class="source">WSJ Markets</span></li>
+    <li><a href="https://www.wsj.com/finance/banking/the-ai-boom-is-supercharging-wall-streets-profits-2a2d9747?mod=rss_markets_main">AIブームがウォール街の利益を押し上げ</a>
+      <p class="summary">AIブームを受けウォール街の投資銀行部門の収益が増加している。富裕層向け資産運用部門も新たなAI新興富裕層を顧客として取り込んでいる。</p>
+      <span class="source">WSJ Markets</span></li>
+    <li><a href="https://www.wsj.com/finance/regulation/debanking-probe-finds-jpmorgan-banks-cut-off-maga-sellers-and-democrat-groups-c170d0a5?mod=rss_markets_main">JPモルガン等によるトランプ支持派や民主党系団体の口座凍結問題</a>
+      <p class="summary">トランプ政権下の規制当局の調査により、JPモルガンを含む大手銀行がトランプ支持派の事業者や民主党系団体との取引を停止していた事例が発覚した。</p>
+      <span class="source">WSJ Markets</span></li>
+    <li><a href="https://www.wsj.com/finance/investing/fund-managers-are-bullishwatch-out-0597c06b?mod=rss_markets_main">ファンドマネージャーは強気姿勢も投資家はインフレデータに警戒</a>
+      <p class="summary">ファンドマネージャーらが市場に強気な姿勢を示す一方で、投資家は今後のインフレデータ発表を見極めようと警戒姿勢を維持している。</p>
+      <span class="source">WSJ Markets</span></li>
+    <li><a href="https://www.wsj.com/economy/housing/stubborn-sellers-are-the-last-thing-propping-up-home-prices-da1a26c9?mod=rss_markets_main">住宅ローン金利7%超でも売り手の強気が米住宅価格を維持</a>
+      <p class="summary">住宅ローン金利が7％を超えているものの、売り手が強気の価格維持姿勢を崩さないことで、米国の住宅価格が下落せずに維持されている。</p>
+      <span class="source">WSJ Markets</span></li>
+    <li><a href="https://www.marketwatch.com/story/rocket-labs-stock-slides-as-the-company-pushes-back-neutrons-first-launch-afd2932a?mod=mw_rss_topstories">ロケット・ラボ株が下落、ニュートロン初打ち上げ延期で</a>
+      <p class="summary">ロケット・ラボがスペースXに対抗する中型ロケット「ニュートロン」の年内初打ち上げ延期を発表したことを受け、同社の株価が下落した。</p>
+      <span class="source">MarketWatch</span></li>
+    <li><a href="https://www.marketwatch.com/story/the-ai-trade-is-splintering-as-inflation-fears-rattle-hyped-up-tech-stocks-dbf49369?mod=mw_rss_topstories">インフレ懸念で過熱気味のハイテク株が動揺、AI投資の分散へ</a>
+      <p class="summary">インフレ懸念と資金調達コストの上昇を受けハイテク株が動揺しており、インフレ高騰がAI関連投資を失速させるか投資家が懸念している。</p>
+      <span class="source">MarketWatch</span></li>
+    <li><a href="https://www.marketwatch.com/story/i-earn-110-000-a-year-i-lost-my-home-in-the-great-recession-im-renting-in-my-50s-why-is-that-judged-as-failure-d1371d67?mod=mw_rss_topstories">金融危機で家を失い50代で賃貸暮らし、失敗とみなす社会への疑問</a>
+      <p class="summary">世界金融危機で持ち家を失い50代で賃貸暮らしを続ける人物が、年収11万ドルありながら失敗とみなされる社会的評価に疑問を呈している。</p>
+      <span class="source">MarketWatch</span></li>
+    <li><a href="https://www.marketwatch.com/story/youre-probably-too-invested-in-equities-why-a-60-40-portfolio-is-still-the-smart-way-to-go-853daade?mod=mw_rss_topstories">株式への偏重投資に警鐘、60-40ポートフォリオの優位性</a>
+      <p class="summary">米国市場の歴史では全額株式と60対40の分散ポートフォリオの30年リターンが同等であり、過度な株式投資への見直しが提唱されている。</p>
+      <span class="source">MarketWatch</span></li>
+    <li><a href="https://www.marketwatch.com/story/social-securitys-cola-will-be-3-6-in-2027-as-inflation-persists-f7c9dff2?mod=mw_rss_topstories">米社会保障給付が月平均75ドル増額もインフレに追いつくか</a>
+      <p class="summary">2027年の米社会保障給付改定により受給額が月平均75ドル引き上げられるが、インフレの上昇スピードに追いつくかが課題となっている。</p>
+      <span class="source">MarketWatch</span></li>
+    <li><a href="https://www.marketwatch.com/story/big-banks-see-risks-in-financing-the-ai-boom-but-are-happy-to-keep-writing-the-checks-e459a206?mod=mw_rss_topstories">米大手銀行、AI投資のリスクを認識しつつも融資継続</a>
+      <p class="summary">米大手銀行の首脳陣はAIインフレ投資に伴うリスクを指摘しつつも、投資減速の兆候はなく融資拡大を継続する姿勢を示している。</p>
+      <span class="source">MarketWatch</span></li>
+    <li><a href="https://www.marketwatch.com/story/coreweave-sparks-worry-about-broader-credit-market-stress-as-its-bonds-tumble-887458e4?mod=mw_rss_topstories">CoreWeaveのAI関連債券が急落、市場全域への警戒感高まる</a>
+      <p class="summary">クラウド企業コアウィーブのAI関連債券が81セントまで急落し利回りが15％を超えたことで、市場全域への警戒感が高まっている。</p>
+      <span class="source">MarketWatch</span></li>
+  </ul>
+</section>
+</main>
+
+<footer class="colophon">
+  <p><a href="./">バックナンバー</a></p>
+  <p>RSSで収集した公開記事の見出しを機械的に整理し、要約はAIが生成しています。投資判断は一次情報をご確認ください。</p>
+</footer>
+
+</div>
+</body>
+</html>
