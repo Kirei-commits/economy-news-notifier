@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>経済日報 2026年11月3日(火)</title>
+<style>
+:root {
+  --ink: #16130f;
+  --ink-soft: #5a534a;
+  --rule: #c9c1b4;
+  --paper: #f7f4ec;
+  --accent: #8a1c1c;
+  --up: #b3261e;
+  --down: #1b5e9c;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #ece7dd;
+    --ink-soft: #a49c90;
+    --rule: #3e3830;
+    --paper: #14120f;
+    --accent: #d98b8b;
+    --up: #e2726a;
+    --down: #7fb2e0;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", "Times New Roman", serif;
+  line-height: 1.75;
+}
+.paper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 28px 20px 64px;
+}
+.masthead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 10px;
+  border-bottom: 3px double var(--rule);
+  flex-wrap: wrap;
+}
+.paper-name {
+  margin: 0;
+  font-size: clamp(30px, 7vw, 46px);
+  letter-spacing: 0.34em;
+  text-indent: 0.34em;
+  font-weight: 700;
+}
+.masthead-meta {
+  font-size: 13px;
+  color: var(--ink-soft);
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+.lead { padding: 22px 0 4px; border-bottom: 1px solid var(--rule); }
+.lead-headline {
+  margin: 0 0 12px;
+  border-left: 5px solid var(--accent);
+  padding-left: 14px;
+  font-size: clamp(23px, 4.6vw, 34px);
+  line-height: 1.45;
+  letter-spacing: 0.02em;
+}
+.lead-body {
+  margin: 0 0 16px;
+  font-size: 16.5px;
+  text-align: justify;
+}
+.top-items { list-style: none; margin: 0 0 20px; padding: 0; border-top: 1px solid var(--rule); }
+.top-items li { padding: 9px 0; border-bottom: 1px dotted var(--rule); }
+.top-items a { font-size: 16px; font-weight: 600; }
+.market { padding: 18px 0; border-bottom: 1px solid var(--rule); }
+.market table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.market th, .market td { padding: 5px 8px; border-bottom: 1px solid var(--rule); text-align: left; }
+.market thead th { font-size: 12px; color: var(--ink-soft); letter-spacing: 0.1em; font-weight: 500; }
+.market .num { text-align: right; font-variant-numeric: tabular-nums; }
+.market .up { color: var(--up); }
+.market .down { color: var(--down); }
+.market-note { margin: 8px 0 0; font-size: 12px; color: var(--ink-soft); }
+.sections { padding-top: 22px; }
+@media (min-width: 720px) {
+  .sections { column-count: 2; column-gap: 34px; column-rule: 1px solid var(--rule); }
+}
+.section { break-inside: avoid-column; margin: 0 0 26px; }
+.section-heading {
+  margin: 0 0 10px;
+  font-size: 14px;
+  letter-spacing: 0.22em;
+  font-weight: 700;
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--ink);
+}
+.articles, .archive-list { list-style: none; margin: 0; padding: 0; }
+.articles li { padding: 8px 0; border-bottom: 1px dotted var(--rule); }
+.archive-list li { padding: 10px 0; border-bottom: 1px dotted var(--rule); }
+.archive-date { display: inline-block; min-width: 11em; color: var(--ink-soft); font-size: 13px; }
+a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--rule); }
+a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+.summary { margin: 5px 0 3px; font-size: 13.5px; line-height: 1.7; color: var(--ink-soft); text-align: justify; }
+.top-items .summary { font-size: 14.5px; color: var(--ink); }
+.source { display: block; font-size: 12px; color: var(--ink-soft); letter-spacing: 0.06em; }
+.colophon {
+  margin-top: 26px;
+  padding-top: 14px;
+  border-top: 3px double var(--rule);
+  font-size: 12.5px;
+  color: var(--ink-soft);
+}
+.colophon p { margin: 6px 0; }
+@media print {
+  body { background: #fff; color: #000; }
+  a { border-bottom: none; }
+}
+</style>
+</head>
+<body>
+<div class="paper">
+
+<header class="masthead">
+  <div class="masthead-meta">2026年11月3日(火)</div>
+  <h1 class="paper-name">経済日報</h1>
+  <div class="masthead-meta">56本 ／ 朝刊</div>
+</header>
+
+<article class="lead">
+  <h2 class="lead-headline">サイバー被害拡大と米ハイテク株の調整</h2>
+  <p class="lead-body">本日の経済情勢は、サイバー攻撃による被害の拡大と米ハイテク株の下落が際立った。金融政策では、日本銀行が10月の経済・物価情勢の展望や気候変動オペの対象先公募を公表した。国内経済ではノジマやプレステージなどで大規模な個人情報漏洩が発覚したほか、SBIとフジHDの資本業務提携が発表された。海外では暗号資産取引所バイナンスへのサイバー攻撃にAIが使われた可能性が浮上し、欧州でもスーパーの冷凍施設に被害が出た。市況面では、AI投資への懸念等から米ナスダック100指数が今年3度目の調整局面入りし、アップルなどの主要銘柄が下落した。</p>
+    <ul class="top-items">
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261103de69892">バイナンスへのサイバー攻撃 AI活用の新手口か</a>
+      <p class="summary">暗号資産取引所バイナンスへの大規模攻撃に北朝鮮のグループが関与したと見られ、AIを用いた新たな手法が使われた可能性を分析会社が指摘した。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261102de69780">ノジマ 通販サイト会員情報約700万件が不正アクセスで漏洩</a>
+      <p class="summary">家電量販大手のノジマは、運営するネット通販サイトの会員管理システムが不正アクセスを受け、会員の個人情報約700万件が漏洩したと発表した。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://www.marketwatch.com/story/nasdaq-100-tumbles-into-its-third-correction-this-year-as-ai-worries-mount-abee4c0d?mod=mw_rss_topstories">ナスダック100指数、AIへの懸念高まり今年3度目の調整局面に突入</a>
+      <p class="summary">AI関連への投資懸念が高まる中、ハイテク株売りの流れが続きナスダック100指数は今年3回目となる調整局面に陥った。</p>
+      <span class="source">MarketWatch</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6601077?source=rss">SBIとフジHDが資本業務提携を発表</a>
+      <p class="summary">SBIホールディングスとフジ・メディア・ホールディングスが資本業務提携を締結したと発表した。</p>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+    <li><a href="https://www.cnbc.com/2026/11/02/south-korea-ai-spending-budget.html">韓国、世界最高水準の独自AI開発へ 過去最大の予算案を編成</a>
+      <p class="summary">韓国は2027年予算を12.8%増の820.9兆ウォンとし、半導体や物理AI、データセンター等に21.3兆ウォンを投じて独自AIモデル構築を目指す。</p>
+      <span class="source">CNBC Economy</span></li>
+  </ul>
+</article>
+
+
+
+<main class="sections">
+<section class="section">
+  <h2 class="section-heading">金融政策</h2>
+  <ul class="articles">
+    <li><a href="http://www.boj.or.jp/paym/intlact_pm/cpss/cpss261102a.htm">CPMIが報告書「進化する決済システムにおける中央銀行および中央銀行マネーの役割」を公表</a>
+      <p class="summary">決済システムの進化に伴う中央銀行および中央銀行マネーの役割に関する報告書をCPMIが公表した。</p>
+      <span class="source">日本銀行</span></li>
+    <li><a href="http://www.boj.or.jp/mopo/measures/select/s_release/srel261102a.htm">気候変動対応を支援するための資金供給オペレーションの対象先公募について</a>
+      <p class="summary">日本銀行は気候変動対応を支援するための資金供給オペレーションに関する対象先の公募を実施する。</p>
+      <span class="source">日本銀行</span></li>
+    <li><a href="http://www.boj.or.jp/about/press/kaiken_2026/kk261102a.pdf">植田日銀総裁記者会見（10月30日分）</a>
+      <p class="summary">日本銀行は10月30日に行われた植田和男総裁の記者会見内容を公表した。</p>
+      <span class="source">日本銀行</span></li>
+    <li><a href="http://www.boj.or.jp/mopo/outlook/gor2610b.pdf">経済・物価情勢の展望（10月、全文）</a>
+      <p class="summary">日本銀行は10月時点の「経済・物価情勢の展望」に関する全文資料を公開した。</p>
+      <span class="source">日本銀行</span></li>
+    <li><a href="http://www.boj.or.jp/statistics/boj/fm/juqf/juqf10.xlsx">日銀当座預金増減要因と金融調節（10月実績）</a>
+      <p class="summary">日本銀行は10月における日銀当座預金増減要因および金融調節の実績結果を発表した。</p>
+      <span class="source">日本銀行</span></li>
+    <li><a href="http://www.boj.or.jp/about/release/sousaidouga.htm">総裁記者会見（10月30日）動画の配信開始</a>
+      <p class="summary">日本銀行は10月30日に開催された総裁記者会見の模様を収めた動画配信を開始した。</p>
+      <span class="source">日本銀行</span></li>
+    <li><a href="https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp.261102~70003226e9.en.html">ボリス・ヴイチッチ氏：統合・開放・強靭性 分断する世界における欧州の強み</a>
+      <p class="summary">欧州中央銀行（ECB）は、分断が進む世界情勢において統合と開放性、強靭性が欧州の強みとなるとする演説内容を公表した。</p>
+      <span class="source">ECB</span></li>
+  </ul>
+</section>
+<section class="section">
+  <h2 class="section-heading">国内経済</h2>
+  <ul class="articles">
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261103de69892">バイナンスへのサイバー攻撃 AI活用の新手口か</a>
+      <p class="summary">暗号資産取引所バイナンスへの大規模攻撃に北朝鮮のグループが関与したと見られ、AIを用いた新たな手法が使われた可能性を分析会社が指摘した。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261103de69869">米アンソロピック 売上高13倍もAI開発費140兆円超に</a>
+      <p class="summary">米アンソロピックがIPO向け書類を改訂し1〜9月売上高が前年同期比13倍となった一方、AI開発に必要な支出が140兆円余りに達したことを明らかにした。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261103de69864">欧州スーパーにサイバー攻撃か 店舗冷凍庫の温度上昇</a>
+      <p class="summary">ベルギーやスウェーデンなど欧州複数国のスーパーでトラブルが起き、冷凍庫の温度上昇で食品被害が生じたため当局がサイバー攻撃の可能性を調査している。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261103de69861">GMO 不正アクセスで会見 セキュリティ体制構築が課題に</a>
+      <p class="summary">GMOインターネットグループが不正アクセス問題の発覚後初の会見を開き、過去の脆弱性対策の不備を認めつつ、経営トップを含むリスク対応体制の構築を課題に挙げた。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261102de69819">丸井グループ 委託先サーバー攻撃で個人情報最大9000人分漏洩</a>
+      <p class="summary">丸井グループはデジタル社債管理業務の委託先が不正アクセスを受け、社債購入用アカウントを作成した顧客の個人情報が最大約9000人分漏洩したと発表した。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261102de69784">ネットマイル 不正アクセスで最大約549万人分の個人情報漏洩か</a>
+      <p class="summary">ポイント交換サービス「ネットマイル」の運営会社は、同社システムへの不正アクセスにより最大でおよそ549万人分の個人情報が漏洩した可能性があると発表した。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261102de69807">プレステージグループ 最大550万件のロードサービス利用情報漏洩</a>
+      <p class="summary">プレステージ・インターナショナルはグループ会社への不正アクセスにより、ロードサービス利用者などの個人情報が最大約550万件漏洩したと発表した。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261102de69780">ノジマ 通販サイト会員情報約700万件が不正アクセスで漏洩</a>
+      <p class="summary">家電量販大手のノジマは、運営するネット通販サイトの会員管理システムが不正アクセスを受け、会員の個人情報約700万件が漏洩したと発表した。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6601082?source=rss">GMO熊谷社長ら 報酬を3カ月減額</a>
+      <p class="summary">GMOインターネットグループの熊谷社長らが、一連の問題を受けて役員報酬を3カ月間減額処分とすることが明らかになった。</p>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6601048?source=rss">フラット35 金利3.81%で過去2番目の高水準</a>
+      <p class="summary">住宅ローンのフラット35の適用金利が3.81%に達し、過去2番目の高い水準となった。</p>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6601077?source=rss">SBIとフジHDが資本業務提携を発表</a>
+      <p class="summary">SBIホールディングスとフジ・メディア・ホールディングスが資本業務提携を締結したと発表した。</p>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6601141?source=rss">安いもやし限界 5年で生産業者13社が撤退</a>
+      <p class="summary">低価格が続いてきたもやし生産業者の経営が限界に達し、過去5年間で13社が市場から消えた。</p>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6601135?source=rss">子どものセルフレジ操作についてSNSで賛否両論</a>
+      <p class="summary">スーパーなどのセルフレジを子どもに操作させることの是非をめぐり、SNS上で議論が広がっている。</p>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6601151?source=rss">「きのこの山」型イヤホン 再販時の購入配慮を実施</a>
+      <p class="summary">話題を集めた「きのこの山」型の無線イヤホンについて、再販売に際した購入方法や転売対策の配慮が行われた。</p>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6601055?source=rss">永谷園「モコモコ」が販売再開へ</a>
+      <p class="summary">永谷園が過去の人気商品「モコモコ」の販売を再開することが分かった。</p>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6601105?source=rss">東京ディズニーランド内に野良猫 運営会社の対応に注目</a>
+      <p class="summary">東京ディズニーランドの園内に野良猫が姿を見せており、運営会社のオリエンタルランドによる対応が注目されている。</p>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+  </ul>
+</section>
+<section class="section">
+  <h2 class="section-heading">海外経済</h2>
+  <ul class="articles">
+    <li><a href="https://asia.nikkei.com/politics/malaysia-transport-minister-still-plans-to-quit-says-megaprojects-safe">マレーシア運輸相、辞意を維持 大型プロジェクトは影響なしと強調</a>
+      <p class="summary">マレーシアの運輸相が辞任計画を維持しつつも、同国の大型インフラプロジェクトには影響がないと主張した。</p>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://asia.nikkei.com/business/technology/apple-s-new-ceo-delivers-first-earnings-as-sales-hit-record">アップル新CEOが初の決算発表 売上高は過去最高を記録</a>
+      <p class="summary">アップルの最高経営責任者（CEO）が交代後初となる決算発表を行い、売上高が過去最高を記録したことを示した。</p>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://asia.nikkei.com/business/tech/semiconductors/japan-s-aisin-develops-new-type-of-ai-chip-that-cuts-energy-use-98">アイシン、消費電力を98%削減する新型AIチップを開発</a>
+      <p class="summary">アイシンが従来の技術と比較して消費電力を98%削減できる新しいタイプのAI向け半導体を開発した。</p>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://asia.nikkei.com/spotlight/asean-money/ethics-drive-wardah-to-pinnacle-of-southeast-asia-s-beauty-brands">倫理的価値観を掲げる「ワーダ」が東南アジア美粧ブランドの頂点へ</a>
+      <p class="summary">倫理的な理念を掲げるコスメブランド「ワーダ」が東南アジアの美容市場でトップシェアを構築した。</p>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://asia.nikkei.com/business/insurance/cyber-insurance-inquiries-surge-at-japan-s-nonlife-insurers">日本の損害保険各社でサイバー保険の問い合わせが急増</a>
+      <p class="summary">不正アクセスや情報漏洩事件の多発に伴い、日本の損害保険会社に対するサイバー保険への問い合わせが増加している。</p>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://asia.nikkei.com/business/startups/singapore-s-insignia-ventures-backs-rural-japan-for-davos-inspired-academy">シンガポールのインシグニア、ダボス会議着想の国際アカデミー設立で日本の地方を支援</a>
+      <p class="summary">シンガポールのインシグニア・ベンチャーズが、ダボス会議に着想を得た教育機関の設立に向けて日本の地方支援を実施している。</p>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://asia.nikkei.com/opinion/the-great-yen-rebalancing">円相場の大規模なリバランシング</a>
+      <p class="summary">為替市場における日本円の需給構造や評価の見極めをめぐり、大幅なリバランシングの動きが観察されている。</p>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://asia.nikkei.com/editor-s-picks/interview/nintendo-s-mario-creator-miyamoto-sees-things-we-can-do-even-in-ai-era">任天堂の宮本茂氏、AI時代においても「実現できること」があると示唆</a>
+      <p class="summary">任天堂でマリオの生みの親である宮本茂氏が、AIが普及する時代においても人間特有の創作活動や提供できる価値があると語った。</p>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/cmp3grwre9xdo?at_medium=RSS&amp;at_campaign=rss">英・EU、食品輸出の規制緩和に向けた協定案に合意</a>
+      <p class="summary">イギリスとEUは今月末の首脳会談を前に、食品輸出に関する行政手続きなどの規制を撤廃する協定草案に合意した。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/cq1kd1nee80eo?at_medium=RSS&amp;at_campaign=rss">欧州7カ国のスーパーでサイバー攻撃 冷凍庫温度が上昇</a>
+      <p class="summary">欧州7カ国の店舗でサイバー攻撃と見られるシステム障害が発生し、冷凍庫の温度が最高50度まで上昇する被害が出た。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/c6rey4v53exgo?at_medium=RSS&amp;at_campaign=rss">北朝鮮、過去最大の63億ドル規模バイナンス攻撃への関与を否定</a>
+      <p class="summary">米当局や分析官が北朝鮮の関与を指摘する中、北朝鮮側は63億ドル規模に及ぶバイナンスへのハッキング関与を否定した。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/c6n8dn457ypko?at_medium=RSS&amp;at_campaign=rss">アップル、折りたたみiPhone完売で追加供給の時期見通せず</a>
+      <p class="summary">2000ドルの折りたたみ型「iPhone Duo」が完売し、アップルは追加供給が可能になる時期を見通せていない。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/cr0qkve1x224o?at_medium=RSS&amp;at_campaign=rss">ライアンエアー、給与凍結と運賃値上げの可能性を示唆</a>
+      <p class="summary">ライアンエアーは米イスラエル対イラン戦争が終結しなければ、2028年に燃料費が20億ユーロ増加するとして給与凍結や値上げの可能性に言及した。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/ck1wv1j0xgywo?at_medium=RSS&amp;at_campaign=rss">パウンドランド元所有者が再出資を提案 閣僚と取締役会の会談控え</a>
+      <p class="summary">パウンドランドの元所有者スティーブ・スミス氏が自ら創業した同社への再出資を提案し、閣僚と取締役会の会談が予定されている。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/cm86zdp2ygqno?at_medium=RSS&amp;at_campaign=rss">商用ゴミ箱から拾い集める「ダンプスター・ダイビング」で節約広がる</a>
+      <p class="summary">企業のゴミ箱から服や生活用品を回収する「ダンプスター・ダイビング」により支出を数百ポンド節約する人々が増えている。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/cwj34gdmnly4o?at_medium=RSS&amp;at_campaign=rss">バイナンス顧客、巨額ハッキング被害後に36億ドルを引き出し</a>
+      <p class="summary">北朝鮮グループが関与した過去最大の暗号資産ハッキング事件を受け、バイナンスのユーザーが36億ドルを引き出した。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.cnbc.com/2026/11/02/south-korea-ai-spending-budget.html">韓国、世界最高水準の独自AI開発へ 過去最大の予算案を編成</a>
+      <p class="summary">韓国は2027年予算を12.8%増の820.9兆ウォンとし、半導体や物理AI、データセンター等に21.3兆ウォンを投じて独自AIモデル構築を目指す。</p>
+      <span class="source">CNBC Economy</span></li>
+  </ul>
+</section>
+<section class="section">
+  <h2 class="section-heading">マーケット・企業</h2>
+  <ul class="articles">
+    <li><a href="https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-02-2026?mod=rss_markets_main">米国株、決算発表後にアップルが下落 ナスダックも反落</a>
+      <p class="summary">米国株式市場でアップル株が決算発表後に下落しナスダック指数も反落した一方、米イラン対話の兆しから原油価格は下落した。</p>
+      <span class="source">WSJ Markets</span></li>
+    <li><a href="https://www.wsj.com/finance/investing/hedge-fund-elliott-warns-of-fogo-fear-of-getting-obliterated-in-the-market-a2cc7027?mod=rss_markets_main">ヘッジファンドのエリオット、「消滅への恐怖（FOGO）」を警告</a>
+      <p class="summary">800億ドル規模のヘッジファンドであるエリオットが第3四半期の運用リターン横ばいを受け、市場での破滅を恐れる「FOGO」への警戒を呼びかけた。</p>
+      <span class="source">WSJ Markets</span></li>
+    <li><a href="https://www.wsj.com/finance/stocks/the-risks-state-and-local-elections-pose-for-wall-street-and-the-ai-trade-3bc5219d?mod=rss_markets_main">米国の数兆ドル規模AIインフラ整備が選挙の焦点に ウォール街が注視</a>
+      <p class="summary">米国で進行する巨額のAIインフラ投資に対する反発が各州の選挙結果に影響を与える可能性があり、ウォール街が注視している。</p>
+      <span class="source">WSJ Markets</span></li>
+    <li><a href="https://www.wsj.com/finance/stocks/anthropic-investors-push-for-cautious-valuation-closer-to-1-5-trillion-2f2df9cf?mod=rss_markets_main">アンソロピックの投資家、1.5兆ドルに近い慎重な評価額を要求</a>
+      <p class="summary">ハイテク株の下落を受け、IPOを目指すアンソロピックの機関投資家は評価額を1.5兆ドル近辺に抑えるよう慎重な姿勢を求めている。</p>
+      <span class="source">WSJ Markets</span></li>
+    <li><a href="https://www.wsj.com/finance/investing/oil-tumbles-but-stocks-fail-to-launch-90972f94?mod=rss_markets_main">原油急落も株式市場は上昇せず マーベルは買収発表で下落</a>
+      <p class="summary">原油価格が急落したものの株式市場の上昇には繋がらず、大企業買収を発表したマーベルの株価も下落した。</p>
+      <span class="source">WSJ Markets</span></li>
+    <li><a href="https://www.wsj.com/finance/commodities-futures/morgan-stanley-raises-bullish-european-gas-price-scenario-on-winter-supply-risks-77062b22?mod=rss_markets_main">米天然ガス先物価格がわずかに反発</a>
+      <p class="summary">3週連続で下落していた米国の天然ガス先物価格が小幅に反発した。</p>
+      <span class="source">WSJ Markets</span></li>
+    <li><a href="https://www.wsj.com/finance/trump-family-linked-mining-venture-aims-to-go-public-in-2-billion-deal-38d85946?mod=rss_markets_main">トランプファミリー関連の鉱山事業、20億ドル規模で上場目指す</a>
+      <p class="summary">トランプ一族が関与するカズ・リソーシズ関連の鉱山ベンチャーが20億ドル規模での上場を目指しており、米政府支援の打診に批判が集まっている。</p>
+      <span class="source">WSJ Markets</span></li>
+    <li><a href="https://www.wsj.com/business/media/netflix-needs-you-to-watch-not-just-pay-f3d90b73?mod=rss_markets_main">ネットフリックス、加入維持だけでなく視聴時間の伸び悩みが課題に</a>
+      <p class="summary">ネットフリックスが広告事業を拡大する上で視聴時間の確保が不可欠となっているが、足元では視聴時間の伸びが停滞している。</p>
+      <span class="source">WSJ Markets</span></li>
+    <li><a href="https://www.marketwatch.com/story/heres-why-palantirs-stock-is-down-despite-a-bombastic-quarter-42c9fdb8?mod=mw_rss_topstories">パランティア、好決算にもかかわらず米商業成長の減速懸念で株価下落</a>
+      <p class="summary">パランティアが好決算を発表したものの、米国内の民需契約の伸び鈍化が嫌気され株価が下落した。</p>
+      <span class="source">MarketWatch</span></li>
+    <li><a href="https://www.marketwatch.com/story/apples-iphone-business-is-booming-heres-why-the-stock-is-falling-anyway-07de9fff?mod=mw_rss_topstories">アップル、iPhone販売好調もメモリ不足とサービス減速で株価下落</a>
+      <p class="summary">iPhoneの需要は堅調なものの、メモリー部品の不足懸念やサービス事業の成長減速が嫌気されアップル株が下落した。</p>
+      <span class="source">MarketWatch</span></li>
+    <li><a href="https://www.marketwatch.com/story/nasdaq-100-tumbles-into-its-third-correction-this-year-as-ai-worries-mount-abee4c0d?mod=mw_rss_topstories">ナスダック100指数、AIへの懸念高まり今年3度目の調整局面に突入</a>
+      <p class="summary">AI関連への投資懸念が高まる中、ハイテク株売りの流れが続きナスダック100指数は今年3回目となる調整局面に陥った。</p>
+      <span class="source">MarketWatch</span></li>
+    <li><a href="https://www.marketwatch.com/story/marvell-and-lumentum-shareholders-unite-in-panning-merger-deal-its-a-trash-offer-53a9f307?mod=mw_rss_topstories">マーベルによるルーメンタム買収に双方の株主から不満噴出</a>
+      <p class="summary">マーベルによるルーメンタムの株式交換での買収合意に対し、不当な条件であるとして双方の株主から酷評され株価が下落した。</p>
+      <span class="source">MarketWatch</span></li>
+    <li><a href="https://www.marketwatch.com/story/traders-rushing-into-a-leveraged-etf-to-make-a-bullish-bet-on-the-nasdaq-100-just-got-burned-d6775191?mod=mw_rss_topstories">ナスダック100ブル型レバレッジETFに殺到した個人投資家が大きな損害</a>
+      <p class="summary">ハイテク株の押し目買いを狙ってナスダック100のレバレッジ型ETFに資金を流し込んだ投資家が、相場急落で損失を被った。</p>
+      <span class="source">MarketWatch</span></li>
+    <li><a href="https://www.marketwatch.com/story/wall-streets-most-hated-stocks-are-faring-far-better-than-its-favorites-4c1d6c68?mod=mw_rss_topstories">ウォール街で敬遠されていた銘柄が人気AI関連銘柄のパフォーマンスを上回る</a>
+      <p class="summary">これまでハイテクやAIの人気銘柄に資金が集中していた反動で、売られていた不人気銘柄が相対的に良好な動きを見せている。</p>
+      <span class="source">MarketWatch</span></li>
+    <li><a href="https://www.marketwatch.com/story/if-you-really-want-to-help-your-adult-kids-and-grandkids-give-them-money-while-youre-still-alive-bef6b056?mod=mw_rss_topstories">生前贈与による子供や孫への支援とリタイア資金計画の両立</a>
+      <p class="summary">自分の老後資金を脅かすことなく、生前贈与を通じて子供や孫を経済的に支援する方法が注目されている。</p>
+      <span class="source">MarketWatch</span></li>
+    <li><a href="https://www.marketwatch.com/story/shes-a-type-a-personality-my-stepmother-wants-me-to-repay-my-late-fathers-40-000-wedding-gift-should-i-oblige-51fc64f7?mod=mw_rss_topstories">亡父からの結婚祝い金4万ドルの返還を迫る継母との金銭トラブル</a>
+      <p class="summary">父親の他界後、継母から生前に受け取った結婚祝い金4万ドルの返還を請求された相談者からの悩みが寄せられた。</p>
+      <span class="source">MarketWatch</span></li>
+  </ul>
+</section>
+</main>
+
+<footer class="colophon">
+  <p><a href="./">バックナンバー</a></p>
+  <p>RSSで収集した公開記事の見出しを機械的に整理し、要約はAIが生成しています。投資判断は一次情報をご確認ください。</p>
+</footer>
+
+</div>
+</body>
+</html>
