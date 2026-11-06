@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>経済日報 2026年11月6日(金)</title>
+<style>
+:root {
+  --ink: #16130f;
+  --ink-soft: #5a534a;
+  --rule: #c9c1b4;
+  --paper: #f7f4ec;
+  --accent: #8a1c1c;
+  --up: #b3261e;
+  --down: #1b5e9c;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #ece7dd;
+    --ink-soft: #a49c90;
+    --rule: #3e3830;
+    --paper: #14120f;
+    --accent: #d98b8b;
+    --up: #e2726a;
+    --down: #7fb2e0;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", "Times New Roman", serif;
+  line-height: 1.75;
+}
+.paper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 28px 20px 64px;
+}
+.masthead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 10px;
+  border-bottom: 3px double var(--rule);
+  flex-wrap: wrap;
+}
+.paper-name {
+  margin: 0;
+  font-size: clamp(30px, 7vw, 46px);
+  letter-spacing: 0.34em;
+  text-indent: 0.34em;
+  font-weight: 700;
+}
+.masthead-meta {
+  font-size: 13px;
+  color: var(--ink-soft);
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+.lead { padding: 22px 0 4px; border-bottom: 1px solid var(--rule); }
+.lead-headline {
+  margin: 0 0 12px;
+  border-left: 5px solid var(--accent);
+  padding-left: 14px;
+  font-size: clamp(23px, 4.6vw, 34px);
+  line-height: 1.45;
+  letter-spacing: 0.02em;
+}
+.lead-body {
+  margin: 0 0 16px;
+  font-size: 16.5px;
+  text-align: justify;
+}
+.top-items { list-style: none; margin: 0 0 20px; padding: 0; border-top: 1px solid var(--rule); }
+.top-items li { padding: 9px 0; border-bottom: 1px dotted var(--rule); }
+.top-items a { font-size: 16px; font-weight: 600; }
+.market { padding: 18px 0; border-bottom: 1px solid var(--rule); }
+.market table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.market th, .market td { padding: 5px 8px; border-bottom: 1px solid var(--rule); text-align: left; }
+.market thead th { font-size: 12px; color: var(--ink-soft); letter-spacing: 0.1em; font-weight: 500; }
+.market .num { text-align: right; font-variant-numeric: tabular-nums; }
+.market .up { color: var(--up); }
+.market .down { color: var(--down); }
+.market-note { margin: 8px 0 0; font-size: 12px; color: var(--ink-soft); }
+.sections { padding-top: 22px; }
+@media (min-width: 720px) {
+  .sections { column-count: 2; column-gap: 34px; column-rule: 1px solid var(--rule); }
+}
+.section { break-inside: avoid-column; margin: 0 0 26px; }
+.section-heading {
+  margin: 0 0 10px;
+  font-size: 14px;
+  letter-spacing: 0.22em;
+  font-weight: 700;
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--ink);
+}
+.articles, .archive-list { list-style: none; margin: 0; padding: 0; }
+.articles li { padding: 8px 0; border-bottom: 1px dotted var(--rule); }
+.archive-list li { padding: 10px 0; border-bottom: 1px dotted var(--rule); }
+.archive-date { display: inline-block; min-width: 11em; color: var(--ink-soft); font-size: 13px; }
+a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--rule); }
+a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+.summary { margin: 5px 0 3px; font-size: 13.5px; line-height: 1.7; color: var(--ink-soft); text-align: justify; }
+.top-items .summary { font-size: 14.5px; color: var(--ink); }
+.source { display: block; font-size: 12px; color: var(--ink-soft); letter-spacing: 0.06em; }
+.colophon {
+  margin-top: 26px;
+  padding-top: 14px;
+  border-top: 3px double var(--rule);
+  font-size: 12.5px;
+  color: var(--ink-soft);
+}
+.colophon p { margin: 6px 0; }
+@media print {
+  body { background: #fff; color: #000; }
+  a { border-bottom: none; }
+}
+</style>
+</head>
+<body>
+<div class="paper">
+
+<header class="masthead">
+  <div class="masthead-meta">2026年11月6日(金)</div>
+  <h1 class="paper-name">経済日報</h1>
+  <div class="masthead-meta">55本 ／ 朝刊</div>
+</header>
+
+<article class="lead">
+  <h2 class="lead-headline">米中間選挙後のAI規制懸念で株暴落、英中銀利上げ</h2>
+  <p class="lead-body">米中間選挙での民主党勝利を受け、AIやデータセンターに対する規制強化懸念が拡大し、日米の株式市場でハイテク株を中心に暴落が相次いだ。ニューヨーク市場ではナスダック指数が急落したほか、東京市場でも日経平均株価が一時4000円以上下落した。金融政策では、イギリス中央銀行が中東情勢に伴う物価上昇を抑え込むため、3年3か月ぶりとなる0.25％の利上げを決定した。国内では、相次ぐ不正アクセス対策として政府が100億円の予備費支出を決定したほか、経済産業省が浜岡原子力発電所のデータ改ざん問題で中部電力に業務改善命令を出した。</p>
+    <ul class="top-items">
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261106de71341">日経平均株価6万円割れ ことし5月以来 一時4000円超下落</a>
+      <p class="summary">米中間選挙での民主党大勝によるAIやデータセンターの規制強化懸念から、6日の東京株式市場で日経平均株価が一時4000円以上値下がりし、今年5月以来の6万円割れとなった。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261106de71306">ナスダック5％超下落 AI・データセンター規制強化を懸念</a>
+      <p class="summary">5日のニューヨーク株式市場で、米中間選挙における民主党の大勝によるAIやデータセンターへの規制強化懸念から半導体銘柄などに売りが広がり、ナスダック指数が5％超急落した。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261106de71304">イギリス中銀が利上げ 中東情勢受けた物価抑制へ3年3か月ぶり</a>
+      <p class="summary">イギリスの中央銀行は3年3か月ぶりとなる0.25％の利上げを発表した。中東情勢を受けた物価の上昇を抑え込むことを狙いとして政策金利の引き上げを決定した。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261106de71336">経済産業省 中部電力に業務改善命令 浜岡原発データ改ざん受け</a>
+      <p class="summary">中部電力の浜岡原子力発電所で地震データ改ざん等の不祥事が相次いだことを受け、経済産業省は再発防止に向けた取り組みを進めるよう求める業務改善命令を中部電力に出した。</p>
+      <span class="source">NHK 経済</span></li>
+  </ul>
+</article>
+
+
+
+<main class="sections">
+<section class="section">
+  <h2 class="section-heading">金融政策</h2>
+  <ul class="articles">
+    <li><a href="http://www.boj.or.jp/about/nichigin_gp/ngp_release/ngp261106.htm">学生向けコンテスト「第22回 日銀グランプリ」決勝大会の実施について</a>
+      <span class="source">日本銀行</span></li>
+    <li><a href="http://www.boj.or.jp/paym/bond/mbond_list/mbond261105.pdf">「債券市場参加者会合」（第25回）の開催について</a>
+      <span class="source">日本銀行</span></li>
+    <li><a href="https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261105a.htm">米FRB、アリージャントやナノ・バンクなどへの強制措置を終了</a>
+      <p class="summary">米連邦準備制度理事会（FRB）は、アリージャント・ユナイテッド・ホールディングス、ナノ・フィナンシャル・ホールディングス、ナノ・バンクに対する法的強制措置を終了すると発表した。</p>
+      <span class="source">FRB</span></li>
+    <li><a href="https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261105_1~5e97d9d5a0.en.html">イザベル・シュナーベル氏：荒波を乗り越える：金融政策についての考察</a>
+      <span class="source">ECB</span></li>
+    <li><a href="https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261105~6495a0df6f.en.html">ピエロ・チポローネ氏：お金の未来を形成する</a>
+      <span class="source">ECB</span></li>
+  </ul>
+</section>
+<section class="section">
+  <h2 class="section-heading">国内経済</h2>
+  <ul class="articles">
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261106de71359">消費税減税法案 与党“6日採決を”野党“首相答弁聞いて判断”</a>
+      <p class="summary">食料品の消費税減税法案をめぐり、与党は衆議院財務金融委員会で質疑後に採決し本会議へ上程する日程を提案したが、野党側は高市総理大臣の答弁を聞いて判断する姿勢を示した。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261106de71363">不正アクセス対策 政府が予備費100億円の支出を決定</a>
+      <p class="summary">不正アクセスによる情報漏えいが相次いでいることを受け、政府は警察のシステム整備といった対策費用として、今年度予算の予備費から100億円を支出することを決定した。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261106de71341">日経平均株価6万円割れ ことし5月以来 一時4000円超下落</a>
+      <p class="summary">米中間選挙での民主党大勝によるAIやデータセンターの規制強化懸念から、6日の東京株式市場で日経平均株価が一時4000円以上値下がりし、今年5月以来の6万円割れとなった。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261106de71336">経済産業省 中部電力に業務改善命令 浜岡原発データ改ざん受け</a>
+      <p class="summary">中部電力の浜岡原子力発電所で地震データ改ざん等の不祥事が相次いだことを受け、経済産業省は再発防止に向けた取り組みを進めるよう求める業務改善命令を中部電力に出した。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261106de71306">ナスダック5％超下落 AI・データセンター規制強化を懸念</a>
+      <p class="summary">5日のニューヨーク株式市場で、米中間選挙における民主党の大勝によるAIやデータセンターへの規制強化懸念から半導体銘柄などに売りが広がり、ナスダック指数が5％超急落した。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261106de71304">イギリス中銀が利上げ 中東情勢受けた物価抑制へ3年3か月ぶり</a>
+      <p class="summary">イギリスの中央銀行は3年3か月ぶりとなる0.25％の利上げを発表した。中東情勢を受けた物価の上昇を抑え込むことを狙いとして政策金利の引き上げを決定した。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261105de71268">政府 事業者向けに要請 &quot;ぜい弱性診断継続など対策徹底を&quot;</a>
+      <p class="summary">不正アクセスによる情報漏えい対策として、政府は事業者に対しAIも活用した継続的な脆弱性診断の実施など、サイバー攻撃対策の徹底を要請した。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261105de71265">松井証券 顧客のメールアドレス最大83万件漏えい</a>
+      <p class="summary">松井証券は、メール配信業務の委託先企業が不正アクセスを受けた影響により、顧客のメールアドレスが最大83万件漏えいしたと発表した。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6601497?source=rss">日経平均 一時4000円以上値下がり</a>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6601489?source=rss">経産省 中部電力に業務改善命令</a>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6601477?source=rss">NYダウ急落 一時1800ドル超安</a>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6601493?source=rss">9月の実質賃金 9カ月連続プラス</a>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6601473?source=rss">日本製紙 八代工場の紙生産断念へ</a>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6601485?source=rss">コロナ融資 918億円が回収困難に</a>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6601471?source=rss">「ドンキ流トイザらス」が始動</a>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6601502?source=rss">Suicaペンギンのバッグ 販売休止</a>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+  </ul>
+</section>
+<section class="section">
+  <h2 class="section-heading">海外経済</h2>
+  <ul class="articles">
+    <li><a href="https://asia.nikkei.com/business/markets/south-korean-exchange-halts-trading-as-ai-stock-sell-off-accelerates">韓国市場、AI関連株の売り加速で取引停止</a>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://asia.nikkei.com/business/business-deals/china-blocks-softbank-s-5.4bn-deal-for-abb-robotics-division">中国、ソフトバンクによる54億ドルのABBロボティクス部門買収を阻止</a>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://asia.nikkei.com/business/business-deals/major-south-korean-newspaper-lines-up-rescue-by-tech-food-companies">韓国の主要新聞社、IT・食品大手による支援へ</a>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://asia.nikkei.com/spotlight/environment/climate-change/asia-drives-new-corporate-climate-pledges-as-chinese-firms-embrace-targets">中国企業の目標導入でアジアが新たな企業の気候変動誓約を牽引</a>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://asia.nikkei.com/politics/international-relations/us-china-tensions/us-extends-suspension-of-export-restrictions-on-chinese-firms">米国、中国企業に対する輸出規制の停止措置を延長</a>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://asia.nikkei.com/politics/international-relations/japan-china-tensions/china-japan-row-over-takaichi-s-taiwan-comment-enters-2nd-year">高市氏の台湾発言をめぐる日中対立が2年目に突入</a>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://asia.nikkei.com/politics/u.s.-midterm-elections/us-midterms-live-nasdaq-plunges-5.5-on-ai-regulation-fears">米中間選挙速報：AI規制懸念でナスダックが5.5％急落</a>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://asia.nikkei.com/politics/data-centers-rare-earths-among-top-priorities-in-japan-s-growth-strategy">データセンターとレアアースが日本の成長戦略の最優先事項に</a>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/cmn04705rd8jo?at_medium=RSS&amp;at_campaign=rss">米中間選挙でAI減速懸念が高まり大手ハイテク株が急落</a>
+      <p class="summary">米中間選挙を受けてデータセンター建設やAI産業への監視強化が懸念され、市場が反応したことで主要なハイテク株式が大幅に下落した。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/cmd9343z3zw2o?at_medium=RSS&amp;at_campaign=rss">新法に先立ち求人広告への給与明記を企業に義務付け</a>
+      <p class="summary">政府は給与差別の防止や求職者の支援を目的として、新たな法律の施行に先立ち求人広告へ給与額を明記するよう企業に義務付ける方針を示した。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/c3j4751pqnj8o?at_medium=RSS&amp;at_campaign=rss">「泣き虫かと聞かれた」：明かされた最悪の面接体験</a>
+      <p class="summary">過酷な採用面接の体験談は当事者にとって辛い経験となるものの、実際の労働環境や就職市場における実態を理解するための教訓を学ぶ機会となっている。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/ckr5y0y37gv3o?at_medium=RSS&amp;at_campaign=rss">ファイザル・イスラム：金利はどこまで上がるのか？</a>
+      <p class="summary">BBCの経済編集長は、今後予定される利上げはあと1回にとどまる可能性が高いとし、それ以上の引き上げは行われないとの見通しを示した。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/cwe9lmp1pyyxo?at_medium=RSS&amp;at_campaign=rss">「宇宙の法則に抗う」エンジン部品への投資急増</a>
+      <p class="summary">非常に過酷な条件下で機能する技術として、製造が極めて困難とされるジェットタービンブレードの生産分野への投資が急速に拡大している。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/cx4g1q3vlp62o?at_medium=RSS&amp;at_campaign=rss">利上げがあなたに影響を与える3つの方法</a>
+      <p class="summary">イギリス中央銀行が発表した利上げ決定により、人々の雇用、各種ローン、貯蓄などの金融生活全般に対して多様な影響が及ぶ見通しである。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/cmze4zk4d789o?at_medium=RSS&amp;at_campaign=rss">飲酒・危険な電動自転車利用者に即座の罰金、取り締まり強化へ</a>
+      <p class="summary">危険な電動自転車の運転手を取り締まるため、政府は現場での即座の罰金適用やその他の規制手法の導入に向けた協議を開始した。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.cnbc.com/2026/11/05/october-jobs-report-preview.html">10月の米雇用統計が金曜日に発表、その見通し</a>
+      <p class="summary">米労働統計局は、注目が集まる10月の非農業部門雇用者数報告を金曜日の午前8時30分（米国東部時間）に発表することを予定している。</p>
+      <span class="source">CNBC Economy</span></li>
+    <li><a href="https://www.cnbc.com/2026/11/05/emocratic-midterm-economy.html">米民主党の選挙勝利が意味する米経済への影響</a>
+      <p class="summary">米選挙における民主党の勝利による政権交代後も、米国の経済構造を左右する根幹的な決定要因は大きく変化しないとの見方が示されている。</p>
+      <span class="source">CNBC Economy</span></li>
+    <li><a href="https://www.cnbc.com/2026/11/05/interest-rates-inflation-uk.html">英中銀がイラン戦争以来初の利上げ、インフレ率5％引き上げを警告</a>
+      <p class="summary">英中銀が政策金利の引き上げを決定し、インフレ率が5％近くまで高騰すると警告した。政策決定において1名の委員が4.25％への利上げを支持した。</p>
+      <span class="source">CNBC Economy</span></li>
+  </ul>
+</section>
+<section class="section">
+  <h2 class="section-heading">マーケット・企業</h2>
+  <ul class="articles">
+    <li><a href="https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-05-2026?mod=rss_markets_main">米株式市場ニュース（2026年11月5日）：ナスダック5.5％急落、選挙後に投資家がAI取引から撤退</a>
+      <p class="summary">米株式市場でハイテク株が修正局面に入りダウ平均は1800ドル以上下落、ナスダック指数も5.5％急落し、投資家は選挙後にAI関連銘柄から撤退した。</p>
+      <span class="source">WSJ Markets</span></li>
+    <li><a href="https://www.wsj.com/finance/investing/the-birkin-fund-cashing-in-on-the-hermes-luxury-resale-market-d9fac395?mod=rss_markets_main">エルメス再販市場で稼ぐ「バーキン・ファンド」</a>
+      <p class="summary">エルメスの希少バッグに特化した投資ファンド「Luxus」が24％のリターンを記録したものの、高級品再販市場には依然として高いリスクが存在する。</p>
+      <span class="source">WSJ Markets</span></li>
+    <li><a href="https://www.wsj.com/finance/investing/how-to-keep-these-wild-market-moves-from-hijacking-your-financial-future-71ecb216?mod=rss_markets_main">激しい市場の動揺に資産の未来を狂わせられないための方法</a>
+      <p class="summary">驚くべき選挙結果を受けて市場が激しく動揺する中、投資家が自身の将来の資産を守るためには、当初の投資戦略を維持することが極めて重要となる。</p>
+      <span class="source">WSJ Markets</span></li>
+    <li><a href="https://www.wsj.com/finance/major-investors-are-skeptical-anthropic-ipo-can-achieve-1-5-trillion-valuation-ca965d8b?mod=rss_markets_main">主要投資家、AnthropicのIPO評価額1.5兆ドル達成に懐疑的</a>
+      <p class="summary">主要投資家らは、人工知能大手のAnthropicが新規株式公開において1.5兆ドルという高評価額を達成することに対して懐疑的な見方を示している。</p>
+      <span class="source">WSJ Markets</span></li>
+    <li><a href="https://www.wsj.com/finance/stocks/why-investors-are-searching-for-hope-in-home-builders-07a525bd?mod=rss_markets_main">投資家が住宅建設会社に希望を見出す理由</a>
+      <p class="summary">火曜日の中間選挙以降、D.R.ホートンやパルティグループ、レナーなどの主要な住宅建設会社の株価が市場平均を上回るパフォーマンスを見せている。</p>
+      <span class="source">WSJ Markets</span></li>
+    <li><a href="https://www.wsj.com/finance/stocks/wall-street-gets-2-5-trillion-ai-reality-check-with-historic-rout-of-tech-stocks-93985d7c?mod=rss_markets_main">ウォール街、ハイテク株の歴史的暴落で2.5兆ドルのAI現実チェック</a>
+      <p class="summary">ハイテク株の歴史的な暴落に伴い、ウォール街ではAI関連銘柄から2.5兆ドルの市場価値が消失し、ナスダック総合指数は修正局面に突入した。</p>
+      <span class="source">WSJ Markets</span></li>
+    <li><a href="https://www.wsj.com/finance/investing/ai-panic-grips-stocks-60a59518?mod=rss_markets_main">株式市場を襲うAIパニック</a>
+      <p class="summary">株式市場にAIバブル崩壊へのパニックが広がる中、投資資金が国債へと流出し、ゼネラル・ミルズは自社事業の売却検討を進めている。</p>
+      <span class="source">WSJ Markets</span></li>
+    <li><a href="https://www.wsj.com/tech/ai/how-the-data-center-backlash-could-play-into-the-hands-of-big-tech-a37dfb29?mod=rss_markets_main">データセンターへの反発が大手IT企業に有利に働く理由</a>
+      <p class="summary">データセンター開発に対する反対運動の激化が業界の淘汰を促し、結果としてアマゾンやマイクロソフトといった大手IT企業に有利に働く可能性がある。</p>
+      <span class="source">WSJ Markets</span></li>
+    <li><a href="https://www.marketwatch.com/story/heres-whats-driving-irens-stock-higher-after-a-brutal-selloff-0ced09b0?mod=mw_rss_topstories">大幅下落後にアイレン株が上昇している背景</a>
+      <p class="summary">急激な売り出しを経験したアイレン（Iren）は、新たなクラウドコンピューティング契約を発表したことや投資適格顧客との契約残高が好感され株価が上昇した。</p>
+      <span class="source">MarketWatch</span></li>
+    <li><a href="https://www.marketwatch.com/story/cloudflares-stock-mounts-a-big-comeback-after-fastest-sales-surge-in-nearly-4-years-d80d994d?mod=mw_rss_topstories">クラウドフレア株が過去約4年で最も速い売上急増を受け大幅反発</a>
+      <p class="summary">自動AI保護への強い需要が決算に反映され、クラウドフレアの売上高が過去約4年で最も速いペースで急増したことで、同社株価は大幅な反発を見せた。</p>
+      <span class="source">MarketWatch</span></li>
+    <li><a href="https://www.marketwatch.com/story/here-are-the-2027-capital-gains-tax-rates-for-each-income-level-166fc306?mod=mw_rss_topstories">所得階層別の2027年キャピタルゲイン税率</a>
+      <p class="summary">米国内国歳入庁（IRS）は、国民の関心が高い来年の譲渡所得税率に関する決定事項として、2027年の所得階層別キャピタルゲイン税率を発表した。</p>
+      <span class="source">MarketWatch</span></li>
+    <li><a href="https://www.marketwatch.com/story/tech-stocks-log-worst-day-since-2020-as-carnage-comes-to-the-ai-trade-56109845?mod=mw_rss_topstories">ハイテク株が2020年以来最悪の一日、AI取引に悲惨な影響</a>
+      <p class="summary">AI取引への打撃でS&amp;P500指数から推定2.9兆ドルの時価総額が消失し、ハイテク株は2020年以来最悪の下げ幅を記録する一日となった。</p>
+      <span class="source">MarketWatch</span></li>
+    <li><a href="https://www.marketwatch.com/story/the-2027-tax-brackets-are-out-see-what-the-standard-deduction-and-salt-tax-breaks-will-be-5dd1d293?mod=mw_rss_topstories">2027年の税率区分が発表、標準控除とSALT税控除の見通し</a>
+      <p class="summary">米国の2027年所得税ブラケットが発表され、標準控除や州・地方税控除の調整が行われたことは再燃するインフレの影響を色濃く反映している。</p>
+      <span class="source">MarketWatch</span></li>
+    <li><a href="https://www.marketwatch.com/story/how-much-roth-conversion-can-you-do-in-2027-with-the-new-tax-brackets-a2f940c8?mod=mw_rss_topstories">新税率区分における2027年のRothコンバージョン可能額</a>
+      <p class="summary">新たな税率ブラケットの適用下において、2027年に実施すべきRothコンバージョンの適切な金額と実行条件に関する試算方法が示された。</p>
+      <span class="source">MarketWatch</span></li>
+    <li><a href="https://www.marketwatch.com/story/buy-the-dip-or-wait-it-out-young-investors-react-as-retail-stock-selling-hits-one-of-its-highest-levels-since-covid-crash-610d8087?mod=mw_rss_topstories">押し目買いか様子見か、コロナショック以来の売りの中で若年投資家が反応</a>
+      <p class="summary">個人投資家の株式売りがコロナショック以来の高水準に達する中、押し目買いか様子見かで若い投資家たちの判断と投資本能が試されている。</p>
+      <span class="source">MarketWatch</span></li>
+    <li><a href="https://www.marketwatch.com/story/the-musk-selloff-deepens-as-tesla-and-spacex-combine-for-450-billion-two-day-wipeout-d300ab4f?mod=mw_rss_topstories">テスラとSpaceXの2日間で4560億ドル消失で「マスク売り」深化</a>
+      <p class="summary">ねじれ国会が事業を推進する企業経営を阻害するとの懸念から、テスラとスペースXの合計時価総額が2日間で4560億ドル失われる事態となった。</p>
+      <span class="source">MarketWatch</span></li>
+  </ul>
+</section>
+</main>
+
+<footer class="colophon">
+  <p><a href="./">バックナンバー</a></p>
+  <p>RSSで収集した公開記事の見出しを機械的に整理し、要約はAIが生成しています。投資判断は一次情報をご確認ください。</p>
+</footer>
+
+</div>
+</body>
+</html>
