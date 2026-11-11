@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>経済日報 2026年11月11日(水)</title>
+<style>
+:root {
+  --ink: #16130f;
+  --ink-soft: #5a534a;
+  --rule: #c9c1b4;
+  --paper: #f7f4ec;
+  --accent: #8a1c1c;
+  --up: #b3261e;
+  --down: #1b5e9c;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #ece7dd;
+    --ink-soft: #a49c90;
+    --rule: #3e3830;
+    --paper: #14120f;
+    --accent: #d98b8b;
+    --up: #e2726a;
+    --down: #7fb2e0;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", "Times New Roman", serif;
+  line-height: 1.75;
+}
+.paper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 28px 20px 64px;
+}
+.masthead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 10px;
+  border-bottom: 3px double var(--rule);
+  flex-wrap: wrap;
+}
+.paper-name {
+  margin: 0;
+  font-size: clamp(30px, 7vw, 46px);
+  letter-spacing: 0.34em;
+  text-indent: 0.34em;
+  font-weight: 700;
+}
+.masthead-meta {
+  font-size: 13px;
+  color: var(--ink-soft);
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+.lead { padding: 22px 0 4px; border-bottom: 1px solid var(--rule); }
+.lead-headline {
+  margin: 0 0 12px;
+  border-left: 5px solid var(--accent);
+  padding-left: 14px;
+  font-size: clamp(23px, 4.6vw, 34px);
+  line-height: 1.45;
+  letter-spacing: 0.02em;
+}
+.lead-body {
+  margin: 0 0 16px;
+  font-size: 16.5px;
+  text-align: justify;
+}
+.top-items { list-style: none; margin: 0 0 20px; padding: 0; border-top: 1px solid var(--rule); }
+.top-items li { padding: 9px 0; border-bottom: 1px dotted var(--rule); }
+.top-items a { font-size: 16px; font-weight: 600; }
+.market { padding: 18px 0; border-bottom: 1px solid var(--rule); }
+.market table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.market th, .market td { padding: 5px 8px; border-bottom: 1px solid var(--rule); text-align: left; }
+.market thead th { font-size: 12px; color: var(--ink-soft); letter-spacing: 0.1em; font-weight: 500; }
+.market .num { text-align: right; font-variant-numeric: tabular-nums; }
+.market .up { color: var(--up); }
+.market .down { color: var(--down); }
+.market-note { margin: 8px 0 0; font-size: 12px; color: var(--ink-soft); }
+.sections { padding-top: 22px; }
+@media (min-width: 720px) {
+  .sections { column-count: 2; column-gap: 34px; column-rule: 1px solid var(--rule); }
+}
+.section { break-inside: avoid-column; margin: 0 0 26px; }
+.section-heading {
+  margin: 0 0 10px;
+  font-size: 14px;
+  letter-spacing: 0.22em;
+  font-weight: 700;
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--ink);
+}
+.articles, .archive-list { list-style: none; margin: 0; padding: 0; }
+.articles li { padding: 8px 0; border-bottom: 1px dotted var(--rule); }
+.archive-list li { padding: 10px 0; border-bottom: 1px dotted var(--rule); }
+.archive-date { display: inline-block; min-width: 11em; color: var(--ink-soft); font-size: 13px; }
+a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--rule); }
+a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+.summary { margin: 5px 0 3px; font-size: 13.5px; line-height: 1.7; color: var(--ink-soft); text-align: justify; }
+.top-items .summary { font-size: 14.5px; color: var(--ink); }
+.source { display: block; font-size: 12px; color: var(--ink-soft); letter-spacing: 0.06em; }
+.colophon {
+  margin-top: 26px;
+  padding-top: 14px;
+  border-top: 3px double var(--rule);
+  font-size: 12.5px;
+  color: var(--ink-soft);
+}
+.colophon p { margin: 6px 0; }
+@media print {
+  body { background: #fff; color: #000; }
+  a { border-bottom: none; }
+}
+</style>
+</head>
+<body>
+<div class="paper">
+
+<header class="masthead">
+  <div class="masthead-meta">2026年11月11日(水)</div>
+  <h1 class="paper-name">経済日報</h1>
+  <div class="masthead-meta">50本 ／ 朝刊</div>
+</header>
+
+<article class="lead">
+  <h2 class="lead-headline">米インフレ再燃で利上げ懸念 国内企業業績は明暗</h2>
+  <p class="lead-body">米国の10月消費者物価指数（CPI）が市場予想を上回り、連邦準備制度理事会（FRB）による追加利上げへの警戒感が強まっている。これに伴い米金融市場では利回りが上昇した。国内では、ホンダが円安や北米でのハイブリッド車販売増を背景に今年度の最終利益予想を上方修正した一方、ソフトバンクグループは中間決算で7680億円の赤字を計上し、企業の業績は明暗が分かれている。また、日本商工会議所での最大98万人分の個人情報漏えい懸念や、タマホーム社員による火災保険不正請求疑いなど企業ガバナンスを巡る事案が相次いだ。海外では中国の貿易黒字拡大が摩擦要因となっている。</p>
+    <ul class="top-items">
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261110de73820">米消費者物価指数 市場予想上回る FRB追加利上げの見方強まる</a>
+      <p class="summary">米国の10月消費者物価指数が前月比0.4%上昇し市場予想を上回った。金融市場ではFRBが来月追加利上げを決めるという見方が強まっている。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261110de73795">ホンダ 今年度の業績見通しを上方修正 円安やHVの販売増で</a>
+      <p class="summary">ホンダは円安や北米でのハイブリッド車販売増を受け、今年度の最終利益予想を従来予想の4000億円から上方修正した。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261110de73738">中国の貿易黒字1兆ドル超え 貿易摩擦の要因に</a>
+      <p class="summary">中国の2026年1〜10月の貿易黒字が1兆ドルを超えて過去最大ペースとなり、EUなどとの貿易摩擦の要因となっている。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6602072?source=rss">SBGが7680億円の赤字 中間決算</a>
+      <p class="summary">ソフトバンクグループの中間決算で7680億円の最終赤字が計上された。</p>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261110de73779">日商 受験者最大約98万人分の情報漏えいか 不正アクセスの影響</a>
+      <p class="summary">日本商工会議所は委託先サーバーへの不正アクセスにより、ネット試験受験者の個人情報最大約98万人分が漏えいした可能性を発表した。</p>
+      <span class="source">NHK 経済</span></li>
+  </ul>
+</article>
+
+
+
+<main class="sections">
+<section class="section">
+  <h2 class="section-heading">金融政策</h2>
+  <ul class="articles">
+    <li><a href="http://www.boj.or.jp/statistics/money/ms/ms2610.pdf">日本銀行「マネーストック（10月）」</a>
+      <p class="summary">日本銀行が10月のマネーストック統計を発表した。</p>
+      <span class="source">日本銀行</span></li>
+    <li><a href="https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261110_1~9725b7aa07.en.html">ECBレーン専務理事：金融政策コミュニケーションの理論と実践</a>
+      <p class="summary">ECBのレーン専務理事が金融政策のコミュニケーションに関する理論と実践について見解を述べた。</p>
+      <span class="source">ECB</span></li>
+    <li><a href="https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261110~9422461bad.en.html">ECBチポローネ役員：現金とデジタルユーロは表裏一体</a>
+      <p class="summary">ECBのチポローネ役員が現金とデジタルユーロの関係性について言及した。</p>
+      <span class="source">ECB</span></li>
+  </ul>
+</section>
+<section class="section">
+  <h2 class="section-heading">国内経済</h2>
+  <ul class="articles">
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261111de73895">「ネオクラウド」コアウィーブ最終赤字6倍 利息支払いで</a>
+      <p class="summary">米新興クラウドのコアウィーブが発表した7〜9月期決算は、利息支払いの増大などにより最終損益が約1100億円の赤字となった。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261111de73843">タマホーム社員 火災保険不正請求の疑い 損保各社調査求める</a>
+      <p class="summary">タマホームの社員が火災保険金を不正請求した疑いがあり、損害保険各社が同社に対し詳細な調査を求めている。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261110de73820">米消費者物価指数 市場予想上回る FRB追加利上げの見方強まる</a>
+      <p class="summary">米国の10月消費者物価指数が前月比0.4%上昇し市場予想を上回った。金融市場ではFRBが来月追加利上げを決めるという見方が強まっている。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261110de73795">ホンダ 今年度の業績見通しを上方修正 円安やHVの販売増で</a>
+      <p class="summary">ホンダは円安や北米でのハイブリッド車販売増を受け、今年度の最終利益予想を従来予想の4000億円から上方修正した。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261110de73798">ソフト99 クレカ情報含む 最大約13万人の個人情報漏えいか</a>
+      <p class="summary">ソフト99コーポレーションの通販サイトが不正アクセスを受け、クレジットカード情報を含む最大約13万人分の個人情報が漏えいした可能性がある。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261110de73783">りそなHD M＆A支援体制強化へ 仲介大手と資本業務提携</a>
+      <p class="summary">りそなホールディングスはM＆A仲介大手と資本業務提携を結び、ノウハウを共有して後継者不足の解決に向けた支援体制を強化する。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261110de73779">日商 受験者最大約98万人分の情報漏えいか 不正アクセスの影響</a>
+      <p class="summary">日本商工会議所は委託先サーバーへの不正アクセスにより、ネット試験受験者の個人情報最大約98万人分が漏えいした可能性を発表した。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.web.nhk/newsweb/na/nd-20261110de73738">中国の貿易黒字1兆ドル超え 貿易摩擦の要因に</a>
+      <p class="summary">中国の2026年1〜10月の貿易黒字が1兆ドルを超えて過去最大ペースとなり、EUなどとの貿易摩擦の要因となっている。</p>
+      <span class="source">NHK 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6602117?source=rss">障害者雇用ビジネス 登録制を検討</a>
+      <p class="summary">障害者雇用ビジネスに対して登録制の導入が検討されている。</p>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6602099?source=rss">タマホーム社員 保険金を不正請求</a>
+      <p class="summary">タマホームの社員が保険金を不正請求していたことが判明した。</p>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6602072?source=rss">SBGが7680億円の赤字 中間決算</a>
+      <p class="summary">ソフトバンクグループの中間決算で7680億円の最終赤字が計上された。</p>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6602124?source=rss">トヨタ 軽トラックを米国で販売へ</a>
+      <p class="summary">トヨタ自動車が米国市場において軽トラックの販売を開始する方針である。</p>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6602095?source=rss">もう終わりやで 明石ダコ深刻不漁</a>
+      <p class="summary">明石ダコが深刻な不漁に見舞われている。</p>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6602118?source=rss">「稼ぐ」マンション管理組合増加</a>
+      <p class="summary">マンション管理組合において、自主的に収益をあげる取り組みが増加している。</p>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6602129?source=rss">栄養も「優等生」モヤシに存在感</a>
+      <p class="summary">高い栄養価を持つモヤシが存在感を高めている。</p>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+    <li><a href="https://news.yahoo.co.jp/pickup/6602081?source=rss">マック 新チキン商品の販売休止へ</a>
+      <p class="summary">日本マクドナルドが新しいチキン商品の販売を一時休止する。</p>
+      <span class="source">Yahoo!ニュース 経済</span></li>
+  </ul>
+</section>
+<section class="section">
+  <h2 class="section-heading">海外経済</h2>
+  <ul class="articles">
+    <li><a href="https://asia.nikkei.com/business/automobiles/pakistan-s-top-3-wheeler-maker-enters-philippines-in-asean-push">パキスタン最大の3輪車メーカーがフィリピン進出 ASEAN展開を加速</a>
+      <p class="summary">パキスタン最大の3輪車メーカーがASEAN市場開拓のためにフィリピン進出を果たした。</p>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://asia.nikkei.com/business/transportation/thailand-weighs-alternative-to-stalled-airport-rail-project">タイ、停滞する空港鉄道プロジェクトの代替案を検討</a>
+      <p class="summary">タイ政府が難航している空港連結鉄道プロジェクトの代替策を検討している。</p>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://asia.nikkei.com/spotlight/global-management-dialogue/global-management-dialogue-2026/tsmc-microsoft-executives-debate-ai-s-impact-on-day-2-of-nikkei-dialogue">TSMCとマイクロソフト幹部がAIの影響を議論 日経ダイアログ2日目</a>
+      <p class="summary">日経ダイアログの2日目にTSMCとマイクロソフトの幹部が登壇し、AIが社会に与える影響について議論した。</p>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://asia.nikkei.com/business/technology/tech-asia/the-ai-pay-gap-a-chip-boom-breeds-jealousy-and-labor-unrest-in-asia">AI格差による給与問題：半導体ブームが招く羨望と労働不安</a>
+      <p class="summary">アジアの半導体ブームに伴うAI領域の給与格差が、労働者の羨望や不満を引き起こしている。</p>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://asia.nikkei.com/business/automobiles/huawei-s-chinese-auto-alliance-strains-as-deliveries-slump">ファーウェイの中国自動車連合に緊迫感 納車低迷で</a>
+      <p class="summary">ファーウェイが主導する中国の自動車連合にて、納車台数の落ち込みから加盟各社との緊張が高まっている。</p>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://asia.nikkei.com/business/energy/fuel-prices-drive-japan-europe-electricity-futures-to-4-year-high">燃料価格高騰により日本・欧州の電力先物が4年ぶり高値</a>
+      <p class="summary">燃料価格の高騰を受け、日本と欧州の電力先物価格が4年ぶりの高値水準に達した。</p>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://asia.nikkei.com/business/markets/equities/japan-tobacco-shares-tumble-on-fears-of-8bn-russia-loss">日本タバコ産業株が急落 ロシアでの80億ドル損失懸念で</a>
+      <p class="summary">日本タバコ産業の株価が急落しており、ロシア事業に関連する最大80億ドルの損失リスクが懸念されている。</p>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://asia.nikkei.com/politics/defense/japan-to-include-denial-defense-in-revised-security-documents">日本が改定安保文書に拒否的抑止力を盛り込む方針</a>
+      <p class="summary">日本政府が改定する安全保障文書において、相手の侵攻を思いとどまらせる拒否的抑止力を盛り込む方針である。</p>
+      <span class="source">Nikkei Asia</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/c3702jjkez4ko?at_medium=RSS&amp;at_campaign=rss">ポンドランド、倒産回避に向け土壇場の救済交渉に期待</a>
+      <p class="summary">破綻寸前のディスカウントチェーンであるポンドランドは、買い手を見つけるための猶予期間が与えられる見通しである。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/cx5ynyg6j375o?at_medium=RSS&amp;at_campaign=rss">シールや組み立て玩具がクリスマス前の玩具販売を牽引</a>
+      <p class="summary">画面を見る時間への議論が深まる中、シールや組み立て玩具の売上が伸び、クリスマス前の玩具販売を牽引している。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/ck1wvwwl3x0go?at_medium=RSS&amp;at_campaign=rss">エヌビディア、中国スパイ疑惑調査のため米大手法律事務所を起用</a>
+      <p class="summary">エヌビディアは、ジェンスン・フアンCEOと中国スパイとみられる女性との関係が発覚したことを受け、米大手法律事務所を起用して調査を開始した。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/crpdgd723x2zo?at_medium=RSS&amp;at_campaign=rss">Claude開発元、致命的なAI警告にもかかわらず上場へ</a>
+      <p class="summary">対話型AI「Claude」を手がける企業の上場が予定されており、売り出し価格は想定より低い1株70〜78ドルに設定された。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/cqev3vl4ek33o?at_medium=RSS&amp;at_campaign=rss">備えよキャンペーン始動で缶詰やペットボトル水の売上が急増</a>
+      <p class="summary">政府が緊急時への備えを呼びかけたことで、ハンドジェルや非常食などの日用品の売上が急増している。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/cj5yn24llxd6o?at_medium=RSS&amp;at_campaign=rss">ロボット船が危険な機雷除去作業を担う</a>
+      <p class="summary">湾岸地域での紛争を背景に、米軍が自律型機雷捜索システムの実証実験を進めている。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.bbc.co.uk/news/articles/cqp8g8p53x6ko?at_medium=RSS&amp;at_campaign=rss">キム・カーダシアンのSkims、批判を受け高額アドベントカレンダーを返金へ</a>
+      <p class="summary">内容に対するSNS上での批判を受け、Skimsは148ドルのアドベントカレンダーの購入者に対して全額返金対応を行うと発表した。</p>
+      <span class="source">BBC Business</span></li>
+    <li><a href="https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html">10月米CPIは0.4%上昇、予想を上回りFRBのインフレ抑制に試練</a>
+      <p class="summary">10月の米消費者物価指数は前月比0.4%上昇と予想を上回り、金利判断を控えるFRBのインフレ抑制策を難しくしている。</p>
+      <span class="source">CNBC Economy</span></li>
+  </ul>
+</section>
+<section class="section">
+  <h2 class="section-heading">マーケット・企業</h2>
+  <ul class="articles">
+    <li><a href="https://www.wsj.com/livecoverage/stock-market-cpi-inflation-11-10-2026?mod=rss_markets_main">株式市場ニュース（2026年11月10日）：予想以上のインフレで利回りが急上昇</a>
+      <p class="summary">米インフレ率が予想を超えたことで国債利回りが上昇し、エヌビディア株が下落した一方でコアウィーブ株は時間外で上昇した。</p>
+      <span class="source">WSJ Markets</span></li>
+    <li><a href="https://www.wsj.com/us-news/the-26-million-cyberheist-rocking-a-small-new-jersey-town-bbe2ae6d?mod=rss_markets_main">ニュージャージー州の小都市を揺るがす2600万ドルのサイバー被害</a>
+      <p class="summary">クランベリー市で選挙後まで開示されなかった約2600万ドルの公金消失をめぐり、住民が市指導部を追及している。</p>
+      <span class="source">WSJ Markets</span></li>
+    <li><a href="https://www.wsj.com/finance/regulation/sec-enforcement-penalties-fall-to-18-year-low-2aa5d9d3?mod=rss_markets_main">米SECの執法制裁金が18年ぶりの低水準に減少</a>
+      <p class="summary">米SECが昨年度獲得した制裁金は約10億ドルにとどまり、2008年の金融危機以来の低水準となった。</p>
+      <span class="source">WSJ Markets</span></li>
+    <li><a href="https://www.wsj.com/world/uk/u-k-police-arrested-a-u-s-army-soldier-on-allegations-of-spying-for-russia-f87c5257?mod=rss_markets_main">英警察、ロシアへのスパイ容疑で米兵を逮捕</a>
+      <p class="summary">イギリス警察がロシアへの情報漏洩容疑で米陸軍兵士を逮捕したほか、ウォール街では金利上昇懸念が再燃している。</p>
+      <span class="source">WSJ Markets</span></li>
+    <li><a href="https://www.wsj.com/finance/investing/hot-inflation-revives-wall-streets-rate-hike-fears-1ce54f85?mod=rss_markets_main">インフレ高熱でウォール街の利上げ懸念が再燃</a>
+      <p class="summary">FRB高官のタカ派発言や予想以上のインフレ指標を受け、市場関係者の間で利上げに対する懸念が再び強まっている。</p>
+      <span class="source">WSJ Markets</span></li>
+    <li><a href="https://www.wsj.com/pro/bankruptcy/google-agrees-to-privacy-in-spirit-airlines-data-sale-474550e4?mod=rss_markets_main">グーグル、スピリット航空のデータ売却でプライバシー保護に合意</a>
+      <p class="summary">グーグルはスピリット航空の破産協議において、人事データを除外し独立監視人を設置するプライバシー方針に合意した。</p>
+      <span class="source">WSJ Markets</span></li>
+    <li><a href="https://www.wsj.com/finance/stocks/yields-jump-as-inflation-comes-in-hotter-than-expected-77358c3f?mod=rss_markets_main">インフレ率が予想を上回り利回りが急上昇</a>
+      <p class="summary">インフレ加速を受けて利上げの可能性が高まり、株価が下落するとともに国債利回りが急上昇した。</p>
+      <span class="source">WSJ Markets</span></li>
+    <li><a href="https://www.wsj.com/business/a-reined-in-jensen-huang-is-nvidias-best-option-e79cb305?mod=rss_markets_main">自制的なジェンスン・フアン氏こそがエヌビディアの最善の選択肢</a>
+      <p class="summary">AIブームの次なる局面に向けて、エヌビディアのフアンCEOにはより自制的な指導力が求められている。</p>
+      <span class="source">WSJ Markets</span></li>
+    <li><a href="https://www.marketwatch.com/story/one-reason-the-childrens-place-is-going-bankrupt-not-enough-children-b275eab0?mod=mw_rss_topstories">チルドレンズ・プレイス破産申請の要因は「少子化」だけにあらず</a>
+      <p class="summary">子供服のチルドレンズ・プレイスが破産申請に至った背景には、出生率低下以外の要因も存在する。</p>
+      <span class="source">MarketWatch</span></li>
+    <li><a href="https://www.marketwatch.com/story/coreweaves-stock-pops-as-new-financing-playbook-eases-debt-concerns-70241525?mod=mw_rss_topstories">コアウィーブ株が上昇、新たな資金調達手法で負債懸念が和らぐ</a>
+      <p class="summary">第3四半期の売上高が予想を上回り、90億ドルの前払い計画を示したことで、コアウィーブに対する投資家の懸念が和らいだ。</p>
+      <span class="source">MarketWatch</span></li>
+    <li><a href="https://www.marketwatch.com/story/she-can-always-change-her-mind-should-a-widow-leave-the-family-home-to-her-stepchildren-649b06af?mod=mw_rss_topstories">未亡人は亡きパートナーの自宅を継子に残すべきか</a>
+      <p class="summary">配偶者を亡くした女性が自宅の権利を継子に譲るべきか否かについて、様々な選択肢が検討されている。</p>
+      <span class="source">MarketWatch</span></li>
+    <li><a href="https://www.marketwatch.com/story/the-thought-of-living-to-100-terrifies-me-is-social-security-a-giant-ponzi-scheme-84a64e7e?mod=mw_rss_topstories">100歳まで生きる恐怖：公的年金は巨大なネズミ講なのか</a>
+      <p class="summary">人口動態の変化により、公的年金制度の持続可能性に対する懸念が強まっている。</p>
+      <span class="source">MarketWatch</span></li>
+    <li><a href="https://www.marketwatch.com/story/im-sick-of-flying-i-paid-for-priority-boarding-but-the-overhead-bins-were-full-was-i-duped-0badcc80?mod=mw_rss_topstories">優先搭乗を購入したのに頭上の荷物入れが満杯だった件</a>
+      <p class="summary">優先搭乗券を購入したにもかかわらず荷物棚が使えなかった乗客の不満と、機内持ち込みルールの問題点が示されている。</p>
+      <span class="source">MarketWatch</span></li>
+    <li><a href="https://www.marketwatch.com/story/amds-stock-fades-as-investors-weigh-whether-nvidias-turmoil-will-mean-lasting-wins-1ecfbc5e?mod=mw_rss_topstories">AMD株が失速、エヌビディアの混迷が長期的利益につながるか見極め</a>
+      <p class="summary">エヌビディアの混乱に伴い他社へ資金が移動しているものの、顧客の取引先変更に繋がるかは不透明である。</p>
+      <span class="source">MarketWatch</span></li>
+    <li><a href="https://www.marketwatch.com/story/ignore-the-wild-swings-in-chip-stocks-until-they-reach-these-lines-in-the-sand-feb6e00f?mod=mw_rss_topstories">半導体株の押し目買いを検討する投資家への注意点</a>
+      <p class="summary">半導体株指数が明確な節目に達するまでは、安易な押し目買いを避けるべきだと指摘されている。</p>
+      <span class="source">MarketWatch</span></li>
+  </ul>
+</section>
+</main>
+
+<footer class="colophon">
+  <p><a href="./">バックナンバー</a></p>
+  <p>RSSで収集した公開記事の見出しを機械的に整理し、要約はAIが生成しています。投資判断は一次情報をご確認ください。</p>
+</footer>
+
+</div>
+</body>
+</html>
